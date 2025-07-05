@@ -1,0 +1,2862 @@
+EESchema Schematic File Version 4
+LIBS:tremolec-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B77A0F6
+P 11100 5800
+F 0 "SW1" H 11300 5900 50  0000 C CNN
+F 1 "Lfsw" H 10900 5900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 11100 6000 50  0001 C CNN
+F 3 "" H 11100 6000 50  0001 C CNN
+	1    11100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 5B77A2AA
+P 3600 1300
+F 0 "D2" H 3700 1350 50  0000 C CNN
+F 1 "LED" H 3600 1450 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" V 3600 1300 50  0001 C CNN
+F 3 "~" V 3600 1300 50  0001 C CNN
+	1    3600 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5B9277C7
+P 3100 4900
+F 0 "R4" V 3000 4900 50  0000 C CNN
+F 1 "10k" V 3200 4900 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 3100 4900 50  0001 C CNN
+F 3 "~" H 3100 4900 50  0001 C CNN
+	1    3100 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5B928A43
+P 1600 4900
+F 0 "C1" V 1500 4900 50  0000 C CNN
+F 1 "100n" V 1700 4900 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 1600 4900 50  0001 C CNN
+F 3 "~" H 1600 4900 50  0001 C CNN
+	1    1600 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5B928D07
+P 2100 5200
+F 0 "R2" H 2159 5246 50  0000 L CNN
+F 1 "1M" H 2159 5155 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 2100 5200 50  0001 C CNN
+F 3 "~" H 2100 5200 50  0001 C CNN
+	1    2100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5B928DD9
+P 1900 4900
+F 0 "R3" V 1800 4900 50  0000 C CNN
+F 1 "1k" V 2000 4900 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 1900 4900 50  0001 C CNN
+F 3 "~" H 1900 4900 50  0001 C CNN
+	1    1900 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5B928E49
+P 1400 5200
+F 0 "R1" H 1459 5246 50  0000 L CNN
+F 1 "2.2M" H 1459 5155 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 1400 5200 50  0001 C CNN
+F 3 "~" H 1400 5200 50  0001 C CNN
+	1    1400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U2
+U 1 1 5B929378
+P 4400 4800
+F 0 "U2" H 4600 5200 50  0000 C CNN
+F 1 "OPA1678" H 4600 5100 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4400 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4400 4800 50  0001 C CNN
+	1    4400 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5B9294BE
+P 4400 3900
+F 0 "R6" V 4300 3900 50  0000 C CNN
+F 1 "10k" V 4500 3900 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 4400 3900 50  0001 C CNN
+F 3 "~" H 4400 3900 50  0001 C CNN
+	1    4400 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5B929567
+P 4400 4200
+F 0 "C3" V 4300 4200 50  0000 C CNN
+F 1 "220p" V 4500 4200 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 4400 4200 50  0001 C CNN
+F 3 "~" H 4400 4200 50  0001 C CNN
+	1    4400 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 4900 1400 4900
+Wire Wire Line
+	1400 5100 1400 4900
+Connection ~ 1400 4900
+Wire Wire Line
+	1400 4900 1300 4900
+Wire Wire Line
+	2100 5100 2100 4900
+Wire Wire Line
+	4100 4700 4000 4700
+Wire Wire Line
+	4000 3900 4300 3900
+Wire Wire Line
+	4300 4200 4000 4200
+Wire Wire Line
+	4500 3900 4800 3900
+Wire Wire Line
+	4500 4200 4800 4200
+$Comp
+L Device:R_Small R7
+U 1 1 5B92D176
+P 5000 4900
+F 0 "R7" V 4900 4900 50  0000 C CNN
+F 1 "4.7k" V 5100 4900 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 5000 4900 50  0001 C CNN
+F 3 "~" H 5000 4900 50  0001 C CNN
+	1    5000 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 4700 5400 4700
+Wire Wire Line
+	5400 4700 5400 4500
+Wire Wire Line
+	4900 4900 4800 4900
+Wire Wire Line
+	4700 4800 4800 4800
+Connection ~ 4800 4800
+Wire Wire Line
+	4800 4800 4800 4900
+$Comp
+L Device:R_Small R10
+U 1 1 5B933C91
+P 5800 4200
+F 0 "R10" V 5700 4200 50  0000 C CNN
+F 1 "4.7k" V 5900 4200 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 5800 4200 50  0001 C CNN
+F 3 "~" H 5800 4200 50  0001 C CNN
+	1    5800 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5B933CF3
+P 5800 4500
+F 0 "C4" V 5700 4500 50  0000 C CNN
+F 1 "220p" V 5900 4500 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 5800 4500 50  0001 C CNN
+F 3 "~" H 5800 4500 50  0001 C CNN
+	1    5800 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4200 5400 4200
+Wire Wire Line
+	5700 4500 5400 4500
+Connection ~ 5400 4500
+Wire Wire Line
+	5400 4500 5400 4200
+Wire Wire Line
+	5900 4500 6200 4500
+Wire Wire Line
+	6200 4500 6200 4800
+Wire Wire Line
+	6200 4800 6100 4800
+Wire Wire Line
+	5900 4200 6200 4200
+Wire Wire Line
+	6200 4200 6200 4500
+Connection ~ 6200 4500
+$Comp
+L Device:CP_Small C15
+U 1 1 5B936FE5
+P 6400 4800
+F 0 "C15" V 6500 4800 50  0000 C CNN
+F 1 "10u" V 6300 4800 50  0000 C CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 6400 4800 50  0001 C CNN
+F 3 "~" H 6400 4800 50  0001 C CNN
+	1    6400 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5B937171
+P 6700 4800
+F 0 "R15" V 6600 4800 50  0000 C CNN
+F 1 "1k" V 6800 4800 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 6700 4800 50  0001 C CNN
+F 3 "~" H 6700 4800 50  0001 C CNN
+	1    6700 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 5B9372DF
+P 6900 5000
+F 0 "R16" H 6959 5046 50  0000 L CNN
+F 1 "100k" H 6959 4955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 6900 5000 50  0001 C CNN
+F 3 "~" H 6900 5000 50  0001 C CNN
+	1    6900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4800 6300 4800
+Wire Wire Line
+	6500 4800 6600 4800
+Wire Wire Line
+	6800 4800 6900 4800
+Wire Wire Line
+	6900 4800 6900 4900
+$Comp
+L power:GNDA #PWR09
+U 1 1 5B93A0AB
+P 6900 5100
+F 0 "#PWR09" H 6900 4850 50  0001 C CNN
+F 1 "GNDA" H 6905 4927 50  0000 C CNN
+F 2 "" H 6900 5100 50  0001 C CNN
+F 3 "" H 6900 5100 50  0001 C CNN
+	1    6900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR01
+U 1 1 5B93A0FF
+P 1400 5300
+F 0 "#PWR01" H 1400 5050 50  0001 C CNN
+F 1 "GNDA" H 1405 5127 50  0000 C CNN
+F 2 "" H 1400 5300 50  0001 C CNN
+F 3 "" H 1400 5300 50  0001 C CNN
+	1    1400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5400 2100 5300
+$Comp
+L power:+9V #PWR019
+U 1 1 5B93D577
+P 3100 2300
+F 0 "#PWR019" H 3100 2150 50  0001 C CNN
+F 1 "+9V" H 3115 2473 50  0000 C CNN
+F 2 "" H 3100 2300 50  0001 C CNN
+F 3 "" H 3100 2300 50  0001 C CNN
+	1    3100 2300
+	1    0    0    -1  
+$EndComp
+Text Label 2100 5400 2    50   ~ 0
+BIAS
+$Comp
+L Amplifier_Operational:TL072 U1
+U 1 1 5B92B33C
+P 2500 4800
+F 0 "U1" H 2500 5167 50  0000 C CNN
+F 1 "OPA1678" H 2500 5076 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2500 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2500 4800 50  0001 C CNN
+	1    2500 4800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2100 4900 2200 4900
+Wire Wire Line
+	2200 4700 2100 4700
+Wire Wire Line
+	2900 4800 2800 4800
+Wire Wire Line
+	2900 4800 2900 4900
+Wire Wire Line
+	2900 4900 3000 4900
+Connection ~ 2900 4800
+Connection ~ 6200 4800
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5B934855
+P 7200 4800
+F 0 "J2" H 7280 4842 50  0000 L CNN
+F 1 "OUT" H 7280 4751 50  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 7200 4800 50  0001 C CNN
+F 3 "~" H 7200 4800 50  0001 C CNN
+	1    7200 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 4800
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5B934A98
+P 1100 4900
+F 0 "J1" H 1180 4942 50  0000 L CNN
+F 1 "IN" H 1180 4851 50  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 1100 4900 50  0001 C CNN
+F 3 "~" H 1100 4900 50  0001 C CNN
+	1    1100 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 4800 6900 4800
+$Comp
+L Device:R_Small R28
+U 1 1 5B9362FC
+P 2400 2500
+F 0 "R28" H 2459 2546 50  0000 L CNN
+F 1 "100k" H 2459 2455 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 2400 2500 50  0001 C CNN
+F 3 "~" H 2400 2500 50  0001 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R29
+U 1 1 5B936407
+P 2400 2900
+F 0 "R29" H 2459 2946 50  0000 L CNN
+F 1 "100k" H 2459 2855 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 2400 2900 50  0001 C CNN
+F 3 "~" H 2400 2900 50  0001 C CNN
+	1    2400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR017
+U 1 1 5B9367A3
+P 2400 3000
+F 0 "#PWR017" H 2400 2750 50  0001 C CNN
+F 1 "GNDA" H 2405 2827 50  0000 C CNN
+F 2 "" H 2400 3000 50  0001 C CNN
+F 3 "" H 2400 3000 50  0001 C CNN
+	1    2400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR018
+U 1 1 5B9367FE
+P 2800 3000
+F 0 "#PWR018" H 2800 2750 50  0001 C CNN
+F 1 "GNDA" H 2805 2827 50  0000 C CNN
+F 2 "" H 2800 3000 50  0001 C CNN
+F 3 "" H 2800 3000 50  0001 C CNN
+	1    2800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR021
+U 1 1 5B936859
+P 3600 3000
+F 0 "#PWR021" H 3600 2750 50  0001 C CNN
+F 1 "GNDA" H 3605 2827 50  0000 C CNN
+F 2 "" H 3600 3000 50  0001 C CNN
+F 3 "" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2600 2400 2700
+Wire Wire Line
+	2800 2700 2800 2800
+Wire Wire Line
+	2800 2700 2400 2700
+Connection ~ 2400 2700
+Wire Wire Line
+	2400 2700 2400 2800
+Wire Wire Line
+	3500 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 2000
+Wire Wire Line
+	3600 2000 2800 2000
+Wire Wire Line
+	2800 2000 2800 2500
+Wire Wire Line
+	2800 2500 2900 2500
+$Comp
+L power:+9V #PWR016
+U 1 1 5B93B993
+P 2400 2200
+F 0 "#PWR016" H 2400 2050 50  0001 C CNN
+F 1 "+9V" H 2415 2373 50  0000 C CNN
+F 2 "" H 2400 2200 50  0001 C CNN
+F 3 "" H 2400 2200 50  0001 C CNN
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2800 3600 2600
+Connection ~ 3600 2600
+Text Label 3600 1900 2    50   ~ 0
+BIAS
+Wire Wire Line
+	3600 2000 3600 1900
+Connection ~ 3600 2000
+$Comp
+L Device:D_Small D1
+U 1 1 5B941F7A
+P 1800 2500
+F 0 "D1" V 1800 2300 50  0000 C CNN
+F 1 "1N4007" V 1900 2300 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 1800 2500 50  0001 C CNN
+F 3 "~" V 1800 2500 50  0001 C CNN
+	1    1800 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C18
+U 1 1 5B942145
+P 2000 2500
+F 0 "C18" H 2088 2546 50  0000 L CNN
+F 1 "100u" H 2088 2455 50  0000 L CNN
+F 2 "myFoot:my_C_D6.3mm_P2.50mm" H 2000 2500 50  0001 C CNN
+F 3 "~" H 2000 2500 50  0001 C CNN
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR028
+U 1 1 5B942A74
+P 1900 6700
+F 0 "#PWR028" H 1900 6450 50  0001 C CNN
+F 1 "GNDD" H 1904 6545 50  0000 C CNN
+F 2 "" H 1900 6700 50  0001 C CNN
+F 3 "" H 1900 6700 50  0001 C CNN
+	1    1900 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5B942D69
+P 1400 6600
+F 0 "C22" H 1492 6646 50  0000 L CNN
+F 1 "100n" H 1492 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 1400 6600 50  0001 C CNN
+F 3 "~" H 1400 6600 50  0001 C CNN
+	1    1400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5B942E37
+P 2700 6600
+F 0 "C24" H 2792 6646 50  0000 L CNN
+F 1 "100n" H 2792 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 2700 6600 50  0001 C CNN
+F 3 "~" H 2700 6600 50  0001 C CNN
+	1    2700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5B94377E
+P 3600 3900
+F 0 "RV1" V 3400 4000 50  0000 R CNN
+F 1 "10k" V 3500 4000 50  0000 R CNN
+F 2 "myFoot:my_pot" H 3600 3900 50  0001 C CNN
+F 3 "~" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	0    -1   1    0   
+$EndComp
+$Comp
+L Isolator:NSL-32 U4
+U 1 1 5B936E76
+P 5700 1100
+F 0 "U4" H 5400 900 50  0000 C CNN
+F 1 "LCR0202" H 5700 900 50  0000 C CNN
+F 2 "myFoot:LCR0202" H 5700 800 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 5750 1100 50  0001 C CNN
+	1    5700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 5B9373F4
+P 3600 4500
+F 0 "C2" H 3688 4546 50  0000 L CNN
+F 1 "10u" H 3688 4455 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 3600 4500 50  0001 C CNN
+F 3 "~" H 3600 4500 50  0001 C CNN
+	1    3600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR02
+U 1 1 5B938400
+P 3600 4600
+F 0 "#PWR02" H 3600 4350 50  0001 C CNN
+F 1 "GNDA" H 3750 4500 50  0000 C CNN
+F 2 "" H 3600 4600 50  0001 C CNN
+F 3 "" H 3600 4600 50  0001 C CNN
+	1    3600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4300 3600 4400
+$Comp
+L Isolator:NSL-32 U5
+U 1 1 5B93CBBF
+P 5700 1500
+F 0 "U5" H 5400 1300 50  0000 C CNN
+F 1 "LCR0202" H 5700 1300 50  0000 C CNN
+F 2 "myFoot:LCR0202" H 5700 1200 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 5750 1500 50  0001 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 5B93D019
+P 6200 3000
+F 0 "R11" H 6259 3046 50  0000 L CNN
+F 1 "100k" H 6259 2955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 6200 3000 50  0001 C CNN
+F 3 "~" H 6200 3000 50  0001 C CNN
+	1    6200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 5B93D0B5
+P 6600 3000
+F 0 "R14" H 6659 3046 50  0000 L CNN
+F 1 "470R" H 6659 2955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 6600 3000 50  0001 C CNN
+F 3 "~" H 6600 3000 50  0001 C CNN
+	1    6600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5B93D260
+P 6200 2600
+F 0 "C6" H 6292 2646 50  0000 L CNN
+F 1 "22n" H 6292 2555 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 6200 2600 50  0001 C CNN
+F 3 "~" H 6200 2600 50  0001 C CNN
+	1    6200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5B93D3C8
+P 6200 2200
+F 0 "C5" H 6292 2246 50  0000 L CNN
+F 1 "330n" H 6292 2155 50  0000 L CNN
+F 2 "myFoot:my_C_Rect2_P5.00mm" H 6200 2200 50  0001 C CNN
+F 3 "~" H 6200 2200 50  0001 C CNN
+	1    6200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5B93D517
+P 6600 2200
+F 0 "C8" H 6692 2246 50  0000 L CNN
+F 1 "330n" H 6692 2155 50  0000 L CNN
+F 2 "myFoot:my_C_Rect2_P5.00mm" H 6600 2200 50  0001 C CNN
+F 3 "~" H 6600 2200 50  0001 C CNN
+	1    6600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U3
+U 1 1 5B93D6CC
+P 6200 3700
+F 0 "U3" H 6300 3900 50  0000 C CNN
+F 1 "OPA1678" H 6400 4000 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6200 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6200 3700 50  0001 C CNN
+	1    6200 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5900 3600 5800 3600
+Wire Wire Line
+	5800 3600 5800 3300
+Wire Wire Line
+	5800 3300 6600 3300
+Wire Wire Line
+	6600 3300 6600 3700
+Wire Wire Line
+	6600 3700 6500 3700
+Text Label 6200 3200 2    50   ~ 0
+BIAS
+Wire Wire Line
+	5900 3800 5600 3800
+Wire Wire Line
+	5600 3800 5600 2800
+Wire Wire Line
+	6200 3100 6200 3200
+Wire Wire Line
+	6200 2900 6200 2800
+Wire Wire Line
+	6600 3100 6600 3300
+Wire Wire Line
+	6200 2500 6200 2400
+Wire Wire Line
+	6200 2700 6200 2800
+Connection ~ 6200 2800
+Wire Wire Line
+	6200 2300 6200 2400
+Connection ~ 6200 2400
+Wire Wire Line
+	6600 2300 6600 2400
+Wire Wire Line
+	6600 2100 6600 2000
+Wire Wire Line
+	6200 2000 6200 2100
+Connection ~ 6600 3300
+Wire Wire Line
+	6000 1600 6100 1600
+Wire Wire Line
+	6100 1600 6100 1800
+$Comp
+L Device:R_Small R8
+U 1 1 5B98C3E2
+P 5200 1200
+F 0 "R8" V 5125 1200 50  0000 C CNN
+F 1 "1k" V 5275 1200 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 5200 1200 50  0001 C CNN
+F 3 "~" H 5200 1200 50  0001 C CNN
+	1    5200 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 1000 6100 1000
+Wire Wire Line
+	6100 1000 6100 800 
+$Comp
+L Isolator:NSL-32 U6
+U 1 1 5B99F0A6
+P 7500 1100
+F 0 "U6" H 7200 900 50  0000 C CNN
+F 1 "LCR0202" H 7500 900 50  0000 C CNN
+F 2 "myFoot:LCR0202" H 7500 800 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 7550 1100 50  0001 C CNN
+	1    7500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:NSL-32 U7
+U 1 1 5B99F0AC
+P 7500 1500
+F 0 "U7" H 7200 1300 50  0000 C CNN
+F 1 "LCR0202" H 7500 1300 50  0000 C CNN
+F 2 "myFoot:LCR0202" H 7500 1200 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 7550 1500 50  0001 C CNN
+	1    7500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 5B99F0B2
+P 8000 3000
+F 0 "R19" H 8059 3046 50  0000 L CNN
+F 1 "100k" H 8059 2955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8000 3000 50  0001 C CNN
+F 3 "~" H 8000 3000 50  0001 C CNN
+	1    8000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 5B99F0B8
+P 8400 3000
+F 0 "R22" H 8459 3046 50  0000 L CNN
+F 1 "470R" H 8459 2955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8400 3000 50  0001 C CNN
+F 3 "~" H 8400 3000 50  0001 C CNN
+	1    8400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5B99F0BE
+P 8000 2600
+F 0 "C10" H 8092 2646 50  0000 L CNN
+F 1 "4.7n" H 8092 2555 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 8000 2600 50  0001 C CNN
+F 3 "~" H 8000 2600 50  0001 C CNN
+	1    8000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5B99F0C4
+P 8000 2200
+F 0 "C12" H 8092 2246 50  0000 L CNN
+F 1 "100n" H 8092 2155 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 8000 2200 50  0001 C CNN
+F 3 "~" H 8000 2200 50  0001 C CNN
+	1    8000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5B99F0CA
+P 8400 2200
+F 0 "C11" H 8492 2246 50  0000 L CNN
+F 1 "100n" H 8492 2155 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 8400 2200 50  0001 C CNN
+F 3 "~" H 8400 2200 50  0001 C CNN
+	1    8400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3300 8400 3300
+Text Label 8000 3200 2    50   ~ 0
+BIAS
+Wire Wire Line
+	8000 3100 8000 3200
+Wire Wire Line
+	8000 2900 8000 2800
+Wire Wire Line
+	8400 3100 8400 3300
+Wire Wire Line
+	8000 2500 8000 2400
+Wire Wire Line
+	8400 2400 8400 2900
+Wire Wire Line
+	8000 2700 8000 2800
+Connection ~ 8000 2800
+Wire Wire Line
+	8000 2300 8000 2400
+Connection ~ 8000 2400
+Wire Wire Line
+	8400 2300 8400 2400
+Wire Wire Line
+	8000 2000 8000 2100
+Connection ~ 8400 3300
+Wire Wire Line
+	7800 1600 7900 1600
+Wire Wire Line
+	7900 1600 7900 1800
+Wire Wire Line
+	7800 1000 7900 1000
+Wire Wire Line
+	7900 1000 7900 800 
+$Comp
+L Isolator:NSL-32 U8
+U 1 1 5B9B8169
+P 9300 1100
+F 0 "U8" H 9000 900 50  0000 C CNN
+F 1 "LCR0202" H 9300 900 50  0000 C CNN
+F 2 "myFoot:LCR0202" H 9300 800 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 9350 1100 50  0001 C CNN
+	1    9300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:NSL-32 U9
+U 1 1 5B9B816F
+P 9300 1500
+F 0 "U9" H 9000 1300 50  0000 C CNN
+F 1 "LCR0202" H 9300 1300 50  0000 C CNN
+F 2 "myFoot:LCR0202" H 9300 1200 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 9350 1500 50  0001 C CNN
+	1    9300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1600 9700 1600
+Wire Wire Line
+	9700 1600 9700 1800
+Wire Wire Line
+	9600 1000 9700 1000
+Wire Wire Line
+	9700 1000 9700 800 
+$Comp
+L Device:C_Small C14
+U 1 1 5B9BE427
+P 9800 2200
+F 0 "C14" H 9892 2246 50  0000 L CNN
+F 1 "47n" H 9892 2155 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 9800 2200 50  0001 C CNN
+F 3 "~" H 9800 2200 50  0001 C CNN
+	1    9800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5B9BE42D
+P 10200 2200
+F 0 "C13" H 10292 2246 50  0000 L CNN
+F 1 "22n" H 10292 2155 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 10200 2200 50  0001 C CNN
+F 3 "~" H 10200 2200 50  0001 C CNN
+	1    10200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2300 10200 2400
+Wire Wire Line
+	9800 2000 9800 2100
+$Comp
+L Device:R_Small R25
+U 1 1 5B9C4B39
+P 9800 2600
+F 0 "R25" H 9859 2646 50  0000 L CNN
+F 1 "220R" H 9859 2555 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 9800 2600 50  0001 C CNN
+F 3 "~" H 9800 2600 50  0001 C CNN
+	1    9800 2600
+	1    0    0    -1  
+$EndComp
+Text Label 9800 2800 2    50   ~ 0
+BIAS
+Wire Wire Line
+	9800 2700 9800 2800
+Connection ~ 6600 2400
+Wire Wire Line
+	6200 2400 6600 2400
+Wire Wire Line
+	6300 1200 6000 1200
+Connection ~ 8400 2400
+Wire Wire Line
+	8000 2400 8400 2400
+Wire Wire Line
+	7800 1200 8100 1200
+Wire Wire Line
+	8100 1200 8100 1400
+Wire Wire Line
+	7800 1400 8100 1400
+Wire Wire Line
+	8400 2000 8400 2100
+Wire Wire Line
+	9800 2300 9800 2400
+Wire Wire Line
+	9900 1200 9900 1400
+Wire Wire Line
+	9800 2400 10200 2400
+Connection ~ 9800 2400
+Wire Wire Line
+	9800 2400 9800 2500
+Wire Wire Line
+	9600 1200 9900 1200
+Wire Wire Line
+	9600 1400 9900 1400
+Wire Wire Line
+	9800 2000 10200 2000
+Wire Wire Line
+	10200 2000 10200 2100
+$Comp
+L Device:R_POT RV2
+U 1 1 5BA526A0
+P 11100 1900
+F 0 "RV2" H 11030 1946 50  0000 R CNN
+F 1 "10k" H 11030 1855 50  0000 R CNN
+F 2 "myFoot:my_pot" H 11100 1900 50  0001 C CNN
+F 3 "~" H 11100 1900 50  0001 C CNN
+	1    11100 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 5BA52B49
+P 11700 1900
+F 0 "RV3" H 11630 1946 50  0000 R CNN
+F 1 "10k" H 11630 1855 50  0000 R CNN
+F 2 "myFoot:my_pot" H 11700 1900 50  0001 C CNN
+F 3 "~" H 11700 1900 50  0001 C CNN
+	1    11700 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5BA52BEF
+P 12300 1900
+F 0 "RV4" H 12230 1946 50  0000 R CNN
+F 1 "10k" H 12230 1855 50  0000 R CNN
+F 2 "myFoot:my_pot" H 12300 1900 50  0001 C CNN
+F 3 "~" H 12300 1900 50  0001 C CNN
+	1    12300 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV5
+U 1 1 5BA52CE1
+P 12900 1900
+F 0 "RV5" H 12830 1946 50  0000 R CNN
+F 1 "10k" H 12830 1855 50  0000 R CNN
+F 2 "myFoot:my_pot" H 12900 1900 50  0001 C CNN
+F 3 "~" H 12900 1900 50  0001 C CNN
+	1    12900 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 2800 5200 2800
+Wire Wire Line
+	4600 800  4600 2800
+Wire Wire Line
+	4600 800  6100 800 
+Wire Wire Line
+	5400 1800 6100 1800
+Wire Wire Line
+	5100 4900 5200 4900
+Connection ~ 5200 4900
+Wire Wire Line
+	5200 4900 5500 4900
+Wire Wire Line
+	5400 1800 5400 4200
+Connection ~ 5400 4200
+$Comp
+L Device:R_Small R12
+U 1 1 5B943E19
+P 6300 1000
+F 0 "R12" H 6359 1046 50  0000 L CNN
+F 1 "100k" H 6359 955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 6300 1000 50  0001 C CNN
+F 3 "~" H 6300 1000 50  0001 C CNN
+	1    6300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5B95A36C
+P 3600 4200
+F 0 "R5" H 3659 4246 50  0000 L CNN
+F 1 "4.7k" H 3659 4155 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 3600 4200 50  0001 C CNN
+F 3 "~" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4900 3300 4900
+Wire Wire Line
+	3300 4900 3300 3900
+Wire Wire Line
+	4000 4200 4000 3900
+Connection ~ 4000 4200
+Wire Wire Line
+	3750 3900 4000 3900
+Wire Wire Line
+	3600 4050 3600 4100
+Connection ~ 3300 4900
+Wire Wire Line
+	3300 4900 4100 4900
+Wire Wire Line
+	3300 3900 3450 3900
+Wire Wire Line
+	5600 2800 5800 2800
+Wire Wire Line
+	8000 2000 8400 2000
+Wire Wire Line
+	6200 2000 6600 2000
+$Comp
+L Device:R_Small R13
+U 1 1 5B9D1BA3
+P 6300 1600
+F 0 "R13" H 6359 1646 50  0000 L CNN
+F 1 "100k" H 6359 1555 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 6300 1600 50  0001 C CNN
+F 3 "~" H 6300 1600 50  0001 C CNN
+	1    6300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 800  6300 800 
+Connection ~ 6100 800 
+Wire Wire Line
+	6300 900  6300 800 
+Connection ~ 6300 800 
+Wire Wire Line
+	6300 800  7900 800 
+Wire Wire Line
+	6300 1100 6300 1200
+Wire Wire Line
+	6300 1700 6300 1800
+Wire Wire Line
+	6300 1800 6100 1800
+Connection ~ 6100 1800
+Wire Wire Line
+	6600 2000 6600 1400
+Connection ~ 6600 2000
+Wire Wire Line
+	6000 1400 6300 1400
+Wire Wire Line
+	6300 1500 6300 1400
+Connection ~ 6300 1400
+Wire Wire Line
+	6300 1400 6600 1400
+Wire Wire Line
+	6300 1200 6300 1400
+Connection ~ 6300 1200
+Wire Wire Line
+	7400 2800 7600 2800
+$Comp
+L Device:R_Small R21
+U 1 1 5BA35353
+P 8100 1600
+F 0 "R21" H 8159 1646 50  0000 L CNN
+F 1 "100k" H 8159 1555 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8100 1600 50  0001 C CNN
+F 3 "~" H 8100 1600 50  0001 C CNN
+	1    8100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 5BA3541D
+P 8100 1000
+F 0 "R20" H 8159 1046 50  0000 L CNN
+F 1 "100k" H 8159 955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8100 1000 50  0001 C CNN
+F 3 "~" H 8100 1000 50  0001 C CNN
+	1    8100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1200 8100 1100
+Connection ~ 8100 1200
+Wire Wire Line
+	7900 800  8100 800 
+Connection ~ 7900 800 
+Wire Wire Line
+	8100 900  8100 800 
+Connection ~ 8100 800 
+Wire Wire Line
+	8100 800  9700 800 
+Wire Wire Line
+	8100 1400 8100 1500
+Connection ~ 8100 1400
+Wire Wire Line
+	6300 1800 7900 1800
+Connection ~ 6300 1800
+Wire Wire Line
+	7900 1800 8100 1800
+Connection ~ 7900 1800
+Wire Wire Line
+	8100 1700 8100 1800
+Connection ~ 8100 1800
+Wire Wire Line
+	8100 1800 9700 1800
+Wire Wire Line
+	8100 1400 8400 1400
+Wire Wire Line
+	8400 1400 8400 2000
+Connection ~ 8400 2000
+Wire Wire Line
+	10200 2000 10200 1400
+Connection ~ 10200 2000
+$Comp
+L Device:R_Small R27
+U 1 1 5BAA8406
+P 9900 1600
+F 0 "R27" H 9959 1646 50  0000 L CNN
+F 1 "100k" H 9959 1555 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 9900 1600 50  0001 C CNN
+F 3 "~" H 9900 1600 50  0001 C CNN
+	1    9900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R26
+U 1 1 5BAA84DC
+P 9900 1000
+F 0 "R26" H 9959 1046 50  0000 L CNN
+F 1 "100k" H 9959 955 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 9900 1000 50  0001 C CNN
+F 3 "~" H 9900 1000 50  0001 C CNN
+	1    9900 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 800  9900 800 
+Wire Wire Line
+	9900 800  9900 900 
+Connection ~ 9700 800 
+Wire Wire Line
+	9900 1100 9900 1200
+Connection ~ 9900 1200
+Wire Wire Line
+	9700 1800 9900 1800
+Wire Wire Line
+	9900 1800 9900 1700
+Connection ~ 9700 1800
+Wire Wire Line
+	9900 1500 9900 1400
+Connection ~ 9900 1400
+Wire Wire Line
+	9900 1400 10200 1400
+$Comp
+L Switch:SW_SPDT_MSM SW3
+U 1 1 5BAE2C7A
+P 8400 6300
+F 0 "SW3" H 8300 6400 50  0000 C CNN
+F 1 "DIV" H 8300 6200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8400 6300 50  0001 C CNN
+F 3 "" H 8400 6300 50  0001 C CNN
+	1    8400 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2800 5200 4900
+$Comp
+L power:GNDD #PWR032
+U 1 1 5B964D05
+P 2700 6700
+F 0 "#PWR032" H 2700 6450 50  0001 C CNN
+F 1 "GNDD" H 2704 6545 50  0000 C CNN
+F 2 "" H 2700 6700 50  0001 C CNN
+F 3 "" H 2700 6700 50  0001 C CNN
+	1    2700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5B96CE24
+P 2300 6600
+F 0 "C23" H 2392 6646 50  0000 L CNN
+F 1 "10u" H 2392 6555 50  0000 L CNN
+F 2 "myFoot:my_C_3216(1206)_HandSoldering" H 2300 6600 50  0001 C CNN
+F 3 "~" H 2300 6600 50  0001 C CNN
+	1    2300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR029
+U 1 1 5B96CE2A
+P 2300 6700
+F 0 "#PWR029" H 2300 6450 50  0001 C CNN
+F 1 "GNDD" H 2304 6545 50  0000 C CNN
+F 2 "" H 2300 6700 50  0001 C CNN
+F 3 "" H 2300 6700 50  0001 C CNN
+	1    2300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C28
+U 1 1 5B984BA4
+P 3100 6600
+F 0 "C28" H 3192 6646 50  0000 L CNN
+F 1 "100n" H 3192 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 3100 6600 50  0001 C CNN
+F 3 "~" H 3100 6600 50  0001 C CNN
+	1    3100 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR033
+U 1 1 5B984BAA
+P 3100 6700
+F 0 "#PWR033" H 3100 6450 50  0001 C CNN
+F 1 "GNDD" H 3104 6545 50  0000 C CNN
+F 2 "" H 3100 6700 50  0001 C CNN
+F 3 "" H 3100 6700 50  0001 C CNN
+	1    3100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR027
+U 1 1 5B9962CD
+P 1400 6700
+F 0 "#PWR027" H 1400 6450 50  0001 C CNN
+F 1 "GNDA" H 1405 6527 50  0000 C CNN
+F 2 "" H 1400 6700 50  0001 C CNN
+F 3 "" H 1400 6700 50  0001 C CNN
+	1    1400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR026
+U 1 1 5B9963D7
+P 1400 6300
+F 0 "#PWR026" H 1400 6150 50  0001 C CNN
+F 1 "+9V" H 1415 6473 50  0000 C CNN
+F 2 "" H 1400 6300 50  0001 C CNN
+F 3 "" H 1400 6300 50  0001 C CNN
+	1    1400 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6300 1400 6400
+Wire Wire Line
+	1600 6400 1400 6400
+Connection ~ 1400 6400
+Wire Wire Line
+	1400 6400 1400 6500
+Wire Wire Line
+	2200 6400 2300 6400
+Wire Wire Line
+	2300 6400 2300 6500
+Connection ~ 2300 6400
+Wire Wire Line
+	2700 6400 2700 6300
+Wire Wire Line
+	2300 6400 2700 6400
+Wire Wire Line
+	3100 6500 3100 6400
+Wire Wire Line
+	2700 6500 2700 6400
+Connection ~ 2700 6400
+Wire Wire Line
+	2700 6400 3100 6400
+$Comp
+L Device:C_Small C21
+U 1 1 5B9E2A60
+P 1700 1300
+F 0 "C21" H 1792 1346 50  0000 L CNN
+F 1 "100n" H 1792 1255 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 1700 1300 50  0001 C CNN
+F 3 "~" H 1700 1300 50  0001 C CNN
+	1    1700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR024
+U 1 1 5B9E2A66
+P 1700 1500
+F 0 "#PWR024" H 1700 1250 50  0001 C CNN
+F 1 "GNDA" H 1705 1327 50  0000 C CNN
+F 2 "" H 1700 1500 50  0001 C CNN
+F 3 "" H 1700 1500 50  0001 C CNN
+	1    1700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5B9EBCA9
+P 2000 1300
+F 0 "C19" H 2092 1346 50  0000 L CNN
+F 1 "100n" H 2092 1255 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 2000 1300 50  0001 C CNN
+F 3 "~" H 2000 1300 50  0001 C CNN
+	1    2000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR025
+U 1 1 5B9EBCAF
+P 2000 1500
+F 0 "#PWR025" H 2000 1250 50  0001 C CNN
+F 1 "GNDA" H 2005 1327 50  0000 C CNN
+F 2 "" H 2000 1500 50  0001 C CNN
+F 3 "" H 2000 1500 50  0001 C CNN
+	1    2000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2200 2400 2300
+$Comp
+L power:GNDA #PWR015
+U 1 1 5BA0EE2B
+P 2000 2600
+F 0 "#PWR015" H 2000 2350 50  0001 C CNN
+F 1 "GNDA" H 2005 2427 50  0000 C CNN
+F 2 "" H 2000 2600 50  0001 C CNN
+F 3 "" H 2000 2600 50  0001 C CNN
+	1    2000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR014
+U 1 1 5BA0EEE4
+P 1800 2600
+F 0 "#PWR014" H 1800 2350 50  0001 C CNN
+F 1 "GNDA" H 1805 2427 50  0000 C CNN
+F 2 "" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2400 1800 2300
+Wire Wire Line
+	1800 2300 2000 2300
+Wire Wire Line
+	2000 2400 2000 2300
+Connection ~ 2000 2300
+Wire Wire Line
+	1700 1200 1700 1100
+Wire Wire Line
+	1700 1100 2000 1100
+Wire Wire Line
+	2000 1200 2000 1100
+$Comp
+L power:+9V #PWR023
+U 1 1 5BA5157A
+P 1700 1100
+F 0 "#PWR023" H 1700 950 50  0001 C CNN
+F 1 "+9V" H 1715 1273 50  0000 C CNN
+F 2 "" H 1700 1100 50  0001 C CNN
+F 3 "" H 1700 1100 50  0001 C CNN
+	1    1700 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 1100
+$Comp
+L Device:C_Small C20
+U 1 1 5BA51776
+P 1400 1300
+F 0 "C20" H 1492 1346 50  0000 L CNN
+F 1 "100n" H 1492 1255 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 1400 1300 50  0001 C CNN
+F 3 "~" H 1400 1300 50  0001 C CNN
+	1    1400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR022
+U 1 1 5BA5177D
+P 1400 1500
+F 0 "#PWR022" H 1400 1250 50  0001 C CNN
+F 1 "GNDA" H 1405 1327 50  0000 C CNN
+F 2 "" H 1400 1500 50  0001 C CNN
+F 3 "" H 1400 1500 50  0001 C CNN
+	1    1400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1200 1400 1100
+Wire Wire Line
+	1400 1100 1700 1100
+$Comp
+L power:GNDA #PWR020
+U 1 1 5BA65652
+P 3100 2900
+F 0 "#PWR020" H 3100 2650 50  0001 C CNN
+F 1 "GNDA" H 3105 2727 50  0000 C CNN
+F 2 "" H 3100 2900 50  0001 C CNN
+F 3 "" H 3100 2900 50  0001 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2300 2400 2300
+Wire Wire Line
+	2400 2400 2400 2300
+Connection ~ 2400 2300
+Wire Wire Line
+	2900 2700 2800 2700
+Connection ~ 2800 2700
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5BA9FCD3
+P 3900 1300
+F 0 "J3" H 3980 1342 50  0000 L CNN
+F 1 "Rfsw" H 3980 1251 50  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3900 1300 50  0001 C CNN
+F 3 "~" H 3900 1300 50  0001 C CNN
+	1    3900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR034
+U 1 1 5BACFDC7
+P 3100 1300
+F 0 "#PWR034" H 3100 1150 50  0001 C CNN
+F 1 "+9V" H 3115 1473 50  0000 C CNN
+F 2 "" H 3100 1300 50  0001 C CNN
+F 3 "" H 3100 1300 50  0001 C CNN
+	1    3100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R30
+U 1 1 5BACFECE
+P 3300 1300
+F 0 "R30" V 3200 1300 50  0000 C CNN
+F 1 "4.7k" V 3400 1300 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 3300 1300 50  0001 C CNN
+F 3 "~" H 3300 1300 50  0001 C CNN
+	1    3300 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5BAD0975
+P 5200 1600
+F 0 "R9" V 5125 1600 50  0000 C CNN
+F 1 "1k" V 5275 1600 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 5200 1600 50  0001 C CNN
+F 3 "~" H 5200 1600 50  0001 C CNN
+	1    5200 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 5BAD0A2B
+P 7000 1200
+F 0 "R17" V 6925 1200 50  0000 C CNN
+F 1 "1k" V 7075 1200 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 7000 1200 50  0001 C CNN
+F 3 "~" H 7000 1200 50  0001 C CNN
+	1    7000 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 5BAD0B03
+P 7000 1600
+F 0 "R18" V 6925 1600 50  0000 C CNN
+F 1 "1k" V 7075 1600 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 7000 1600 50  0001 C CNN
+F 3 "~" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 5BAD0BBD
+P 8800 1200
+F 0 "R23" V 8725 1200 50  0000 C CNN
+F 1 "1k" V 8875 1200 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8800 1200 50  0001 C CNN
+F 3 "~" H 8800 1200 50  0001 C CNN
+	1    8800 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 5BAD0CA3
+P 8800 1600
+F 0 "R24" V 8725 1600 50  0000 C CNN
+F 1 "1k" V 8875 1600 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8800 1600 50  0001 C CNN
+F 3 "~" H 8800 1600 50  0001 C CNN
+	1    8800 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1300 3200 1300
+$Comp
+L Device:LED_Small D3
+U 1 1 5BAE50D2
+P 10900 6000
+F 0 "D3" H 11000 6050 50  0000 C CNN
+F 1 "LED" H 10900 6150 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" V 10900 6000 50  0001 C CNN
+F 3 "~" V 10900 6000 50  0001 C CNN
+	1    10900 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R32
+U 1 1 5BAE50D8
+P 10600 6000
+F 0 "R32" V 10500 6000 50  0000 C CNN
+F 1 "4.7k" V 10700 6000 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 10600 6000 50  0001 C CNN
+F 3 "~" H 10600 6000 50  0001 C CNN
+	1    10600 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10800 6000 10700 6000
+Wire Wire Line
+	3500 1300 3400 1300
+$Comp
+L Device:R_Small R33
+U 1 1 5BBA1DE7
+P 7300 6200
+F 0 "R33" V 7200 6200 50  0000 C CNN
+F 1 "10k" V 7400 6200 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 7300 6200 50  0001 C CNN
+F 3 "~" H 7300 6200 50  0001 C CNN
+	1    7300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 5BBA238F
+P 8400 6000
+F 0 "R34" V 8300 6000 50  0000 C CNN
+F 1 "10k" V 8500 6000 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8400 6000 50  0001 C CNN
+F 3 "~" H 8400 6000 50  0001 C CNN
+	1    8400 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R35
+U 1 1 5BBA245B
+P 8400 6600
+F 0 "R35" V 8300 6600 50  0000 C CNN
+F 1 "10k" V 8500 6600 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 8400 6600 50  0001 C CNN
+F 3 "~" H 8400 6600 50  0001 C CNN
+	1    8400 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 3700 9700 3600
+Wire Wire Line
+	9800 3600 9700 3600
+Wire Wire Line
+	9800 3600 9800 3700
+Text Label 10400 5400 0    50   ~ 0
+SW2
+Text Label 10400 4900 0    50   ~ 0
+SW3
+Text Label 10400 5300 0    50   ~ 0
+RV2
+Text Label 10400 5200 0    50   ~ 0
+RV3
+Text Label 10400 5100 0    50   ~ 0
+RV4
+Text Label 10400 5000 0    50   ~ 0
+RV5
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5BCDD7D7
+P 10800 4500
+F 0 "J6" H 10875 4525 39  0000 L CNN
+F 1 "SCK" H 10875 4475 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 10800 4500 50  0001 C CNN
+F 3 "~" H 10800 4500 50  0001 C CNN
+	1    10800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5BCDE80D
+P 10800 4300
+F 0 "J5" H 10875 4325 39  0000 L CNN
+F 1 "MOSI" H 10875 4275 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 10800 4300 50  0001 C CNN
+F 3 "~" H 10800 4300 50  0001 C CNN
+	1    10800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5BCDE8D9
+P 10800 4400
+F 0 "J4" H 10875 4425 39  0000 L CNN
+F 1 "MISO" H 10875 4375 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 10800 4400 50  0001 C CNN
+F 3 "~" H 10800 4400 50  0001 C CNN
+	1    10800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5BCDE9A5
+P 11000 5500
+F 0 "J7" H 11075 5525 39  0000 L CNN
+F 1 "RST" H 11075 5475 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 11000 5500 50  0001 C CNN
+F 3 "~" H 11000 5500 50  0001 C CNN
+	1    11000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5400 10400 5400
+Wire Wire Line
+	10300 4900 10400 4900
+Wire Wire Line
+	10300 5000 10400 5000
+Wire Wire Line
+	10300 5100 10400 5100
+Wire Wire Line
+	10300 5200 10400 5200
+Wire Wire Line
+	10300 5300 10400 5300
+Wire Wire Line
+	10700 5100 10700 5200
+$Comp
+L power:GNDD #PWR040
+U 1 1 5BDA69E5
+P 11100 6100
+F 0 "#PWR040" H 11100 5850 50  0001 C CNN
+F 1 "GNDD" H 11104 5945 50  0000 C CNN
+F 2 "" H 11100 6100 50  0001 C CNN
+F 3 "" H 11100 6100 50  0001 C CNN
+	1    11100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR039
+U 1 1 5BDA6AAE
+P 11400 5900
+F 0 "#PWR039" H 11400 5650 50  0001 C CNN
+F 1 "GNDD" H 11404 5745 50  0000 C CNN
+F 2 "" H 11400 5900 50  0001 C CNN
+F 3 "" H 11400 5900 50  0001 C CNN
+	1    11400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 5800 11400 5800
+Wire Wire Line
+	11400 5800 11400 5900
+Wire Wire Line
+	11000 6000 11100 6000
+Wire Wire Line
+	11100 6000 11100 6100
+Text Label 12700 1900 2    50   ~ 0
+RV5
+Text Label 12100 1900 2    50   ~ 0
+RV4
+Text Label 11500 1900 2    50   ~ 0
+RV3
+Text Label 10900 1900 2    50   ~ 0
+RV2
+Text Label 8100 6300 2    50   ~ 0
+SW3
+$Comp
+L power:GNDD #PWR047
+U 1 1 5BE5EC11
+P 11700 2100
+F 0 "#PWR047" H 11700 1850 50  0001 C CNN
+F 1 "GNDD" H 11704 1945 50  0000 C CNN
+F 2 "" H 11700 2100 50  0001 C CNN
+F 3 "" H 11700 2100 50  0001 C CNN
+	1    11700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR045
+U 1 1 5BE5F26B
+P 11100 2100
+F 0 "#PWR045" H 11100 1850 50  0001 C CNN
+F 1 "GNDD" H 11104 1945 50  0000 C CNN
+F 2 "" H 11100 2100 50  0001 C CNN
+F 3 "" H 11100 2100 50  0001 C CNN
+	1    11100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR049
+U 1 1 5BE5F334
+P 12300 2100
+F 0 "#PWR049" H 12300 1850 50  0001 C CNN
+F 1 "GNDD" H 12304 1945 50  0000 C CNN
+F 2 "" H 12300 2100 50  0001 C CNN
+F 3 "" H 12300 2100 50  0001 C CNN
+	1    12300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR051
+U 1 1 5BE5F3FD
+P 12900 2100
+F 0 "#PWR051" H 12900 1850 50  0001 C CNN
+F 1 "GNDD" H 12904 1945 50  0000 C CNN
+F 2 "" H 12900 2100 50  0001 C CNN
+F 3 "" H 12900 2100 50  0001 C CNN
+	1    12900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 1900 10950 1900
+Wire Wire Line
+	11100 1750 11100 1700
+Wire Wire Line
+	11700 1700 11700 1750
+Wire Wire Line
+	12300 1700 12300 1750
+Wire Wire Line
+	12900 1700 12900 1750
+Wire Wire Line
+	12900 2050 12900 2100
+Wire Wire Line
+	12300 2100 12300 2050
+Wire Wire Line
+	11700 2050 11700 2100
+Wire Wire Line
+	11100 2050 11100 2100
+Wire Wire Line
+	11550 1900 11500 1900
+Wire Wire Line
+	12150 1900 12100 1900
+Wire Wire Line
+	12750 1900 12700 1900
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5BF0EB10
+P 7500 6500
+F 0 "SW2" H 7500 6600 50  0000 C CNN
+F 1 "WAVE" H 7500 6400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7500 6500 50  0001 C CNN
+F 3 "" H 7500 6500 50  0001 C CNN
+	1    7500 6500
+	1    0    0    -1  
+$EndComp
+Text Label 7200 6500 2    50   ~ 0
+SW2
+$Comp
+L power:GNDD #PWR043
+U 1 1 5BF1D0ED
+P 8600 6700
+F 0 "#PWR043" H 8600 6450 50  0001 C CNN
+F 1 "GNDD" H 8604 6545 50  0000 C CNN
+F 2 "" H 8600 6700 50  0001 C CNN
+F 3 "" H 8600 6700 50  0001 C CNN
+	1    8600 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5900 8600 6000
+Wire Wire Line
+	8600 6000 8500 6000
+Wire Wire Line
+	8600 6200 8600 6000
+Connection ~ 8600 6000
+Wire Wire Line
+	8600 6400 8600 6600
+Wire Wire Line
+	8500 6600 8600 6600
+Connection ~ 8600 6600
+Wire Wire Line
+	8600 6600 8600 6700
+Wire Wire Line
+	8300 6600 8200 6600
+Wire Wire Line
+	8200 6600 8200 6300
+Wire Wire Line
+	8200 6300 8100 6300
+Connection ~ 8200 6300
+Wire Wire Line
+	8200 6300 8200 6000
+Wire Wire Line
+	8200 6000 8300 6000
+Wire Wire Line
+	7300 6300 7300 6500
+Wire Wire Line
+	7300 6500 7200 6500
+Connection ~ 7300 6500
+Wire Wire Line
+	7700 6500 7700 6700
+$Comp
+L power:GNDD #PWR041
+U 1 1 5BFA76FB
+P 7700 6700
+F 0 "#PWR041" H 7700 6450 50  0001 C CNN
+F 1 "GNDD" H 7704 6545 50  0000 C CNN
+F 2 "" H 7700 6700 50  0001 C CNN
+F 3 "" H 7700 6700 50  0001 C CNN
+	1    7700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U3
+U 3 1 5C0A16FB
+P 8000 3900
+F 0 "U3" H 7958 3900 50  0001 L CNN
+F 1 "OPA1678" H 7958 3855 50  0001 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8000 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8000 3900 50  0001 C CNN
+	3    8000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 3 1 5C0A2B2C
+P 3200 2600
+F 0 "U1" H 3158 2600 50  0001 L CNN
+F 1 "OPA1678" H 3158 2555 50  0001 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3200 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3200 2600 50  0001 C CNN
+	3    3200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U2
+U 3 1 5C0A2BED
+P 4400 4800
+F 0 "U2" H 4358 4800 50  0001 L CNN
+F 1 "OPA1678" H 4358 4755 50  0001 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4400 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4400 4800 50  0001 C CNN
+	3    4400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U2
+U 2 1 5C0A2E54
+P 5800 4800
+F 0 "U2" H 5900 5000 50  0000 C CNN
+F 1 "OPA1678" H 5800 4524 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5800 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5800 4800 50  0001 C CNN
+	2    5800 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 2 1 5C0A2F90
+P 3200 2600
+F 0 "U1" H 3200 2900 50  0000 C CNN
+F 1 "OPA1678" H 3200 2324 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3200 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3200 2600 50  0001 C CNN
+	2    3200 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U3
+U 2 1 5C0A3612
+P 8000 3900
+F 0 "U3" H 8100 4100 50  0000 C CNN
+F 1 "OPA1678" H 8000 3624 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8000 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8000 3900 50  0001 C CNN
+	2    8000 3900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2100 4300 2900 4300
+Wire Wire Line
+	2100 4300 2100 4700
+Wire Wire Line
+	2900 4300 2900 4800
+Wire Wire Line
+	8400 3900 8300 3900
+Wire Wire Line
+	8400 3300 8400 3900
+Wire Wire Line
+	7700 3800 7600 3800
+Wire Wire Line
+	7600 3300 7600 3800
+Wire Wire Line
+	7400 4000 7700 4000
+Wire Wire Line
+	7400 2800 7400 4000
+Connection ~ 4000 3900
+Wire Wire Line
+	4000 4200 4000 4700
+Wire Wire Line
+	4800 4200 4800 4800
+Wire Wire Line
+	4800 4200 4800 3900
+Connection ~ 4800 4200
+$Comp
+L power:GNDA #PWR04
+U 1 1 5C106E50
+P 4300 5100
+F 0 "#PWR04" H 4300 4850 50  0001 C CNN
+F 1 "GNDA" H 4305 4927 50  0000 C CNN
+F 2 "" H 4300 5100 50  0001 C CNN
+F 3 "" H 4300 5100 50  0001 C CNN
+	1    4300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR011
+U 1 1 5C106F17
+P 7900 4200
+F 0 "#PWR011" H 7900 3950 50  0001 C CNN
+F 1 "GNDA" H 7905 4027 50  0000 C CNN
+F 2 "" H 7900 4200 50  0001 C CNN
+F 3 "" H 7900 4200 50  0001 C CNN
+	1    7900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR010
+U 1 1 5C10709A
+P 7900 3600
+F 0 "#PWR010" H 7900 3450 50  0001 C CNN
+F 1 "+9V" H 7915 3773 50  0000 C CNN
+F 2 "" H 7900 3600 50  0001 C CNN
+F 3 "" H 7900 3600 50  0001 C CNN
+	1    7900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR03
+U 1 1 5C107161
+P 4300 4500
+F 0 "#PWR03" H 4300 4350 50  0001 C CNN
+F 1 "+9V" H 4400 4500 50  0000 C CNN
+F 2 "" H 4300 4500 50  0001 C CNN
+F 3 "" H 4300 4500 50  0001 C CNN
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0101
+U 1 1 5B998028
+P 9700 6700
+F 0 "#PWR0101" H 9700 6450 50  0001 C CNN
+F 1 "GNDD" H 9704 6545 50  0000 C CNN
+F 2 "" H 9700 6700 50  0001 C CNN
+F 3 "" H 9700 6700 50  0001 C CNN
+	1    9700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5B9BA84C
+P 3500 6600
+F 0 "C25" H 3592 6646 50  0000 L CNN
+F 1 "100n" H 3592 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 3500 6600 50  0001 C CNN
+F 3 "~" H 3500 6600 50  0001 C CNN
+	1    3500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR036
+U 1 1 5B9BA852
+P 3500 6700
+F 0 "#PWR036" H 3500 6450 50  0001 C CNN
+F 1 "GNDD" H 3504 6545 50  0000 C CNN
+F 2 "" H 3500 6700 50  0001 C CNN
+F 3 "" H 3500 6700 50  0001 C CNN
+	1    3500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C26
+U 1 1 5B9BA858
+P 3900 6600
+F 0 "C26" H 3992 6646 50  0000 L CNN
+F 1 "100n" H 3992 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 3900 6600 50  0001 C CNN
+F 3 "~" H 3900 6600 50  0001 C CNN
+	1    3900 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR052
+U 1 1 5B9BA85E
+P 3900 6700
+F 0 "#PWR052" H 3900 6450 50  0001 C CNN
+F 1 "GNDD" H 3904 6545 50  0000 C CNN
+F 2 "" H 3900 6700 50  0001 C CNN
+F 3 "" H 3900 6700 50  0001 C CNN
+	1    3900 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6500 3900 6400
+Wire Wire Line
+	3500 6500 3500 6400
+Connection ~ 3500 6400
+Wire Wire Line
+	3500 6400 3900 6400
+Wire Wire Line
+	3100 6400 3500 6400
+Connection ~ 3100 6400
+Wire Wire Line
+	10800 5500 10700 5500
+Wire Wire Line
+	10700 5400 10700 5500
+Connection ~ 10700 5500
+Text Label 5000 1200 2    50   ~ 0
+BASS-
+$Comp
+L power:+9V #PWR0102
+U 1 1 5BACCDA0
+P 24700 1800
+F 0 "#PWR0102" H 24700 1650 50  0001 C CNN
+F 1 "+9V" H 24715 1973 50  0000 C CNN
+F 2 "" H 24700 1800 50  0001 C CNN
+F 3 "" H 24700 1800 50  0001 C CNN
+	1    24700 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDD #PWR0103
+U 1 1 5BACD14D
+P 25000 1800
+F 0 "#PWR0103" H 25000 1550 50  0001 C CNN
+F 1 "GNDD" H 25004 1645 50  0000 C CNN
+F 2 "" H 25000 1800 50  0001 C CNN
+F 3 "" H 25000 1800 50  0001 C CNN
+	1    25000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5BAF07A1
+P 24700 1800
+F 0 "#FLG0101" H 24700 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 24700 1974 50  0001 C CNN
+F 2 "" H 24700 1800 50  0001 C CNN
+F 3 "~" H 24700 1800 50  0001 C CNN
+	1    24700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5BAF0A4A
+P 25000 1800
+F 0 "#FLG0102" H 25000 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 25000 1974 50  0001 C CNN
+F 2 "" H 25000 1800 50  0001 C CNN
+F 3 "~" H 25000 1800 50  0001 C CNN
+	1    25000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5B9AD1E1
+P 5800 2600
+F 0 "C7" H 5892 2646 50  0000 L CNN
+F 1 "0n" H 5892 2555 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 5800 2600 50  0001 C CNN
+F 3 "~" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2400 5800 2500
+Wire Wire Line
+	5800 2700 5800 2800
+Connection ~ 5800 2800
+Wire Wire Line
+	5800 2800 6200 2800
+Wire Wire Line
+	5800 2400 6200 2400
+Wire Wire Line
+	6600 2400 6600 2900
+$Comp
+L Device:C_Small C9
+U 1 1 5BA540E2
+P 7600 2600
+F 0 "C9" H 7692 2646 50  0000 L CNN
+F 1 "0n" H 7692 2555 50  0000 L CNN
+F 2 "myFoot:my_C_Rect1_P5.00mm" H 7600 2600 50  0001 C CNN
+F 3 "~" H 7600 2600 50  0001 C CNN
+	1    7600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2400 7600 2400
+Wire Wire Line
+	7600 2400 7600 2500
+Wire Wire Line
+	7600 2700 7600 2800
+Connection ~ 7600 2800
+Wire Wire Line
+	7600 2800 8000 2800
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5B9D2B3D
+P 1400 900
+F 0 "J8" V 1400 1100 50  0000 C CNN
+F 1 "Vcc" V 1300 1100 50  0000 C CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 1400 900 50  0001 C CNN
+F 3 "~" H 1400 900 50  0001 C CNN
+	1    1400 900 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1400 1100
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5B9D3750
+P 2400 1200
+F 0 "J9" V 2600 1200 50  0000 C CNN
+F 1 "GND1" V 2500 1200 50  0000 C CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 2400 1200 50  0001 C CNN
+F 3 "~" H 2400 1200 50  0001 C CNN
+	1    2400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5B9D3AC8
+P 2700 1200
+F 0 "J10" V 2900 1200 50  0000 C CNN
+F 1 "GND2" V 2800 1200 50  0000 C CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 2700 1200 50  0001 C CNN
+F 3 "~" H 2700 1200 50  0001 C CNN
+	1    2700 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 4900 1700 4900
+Wire Wire Line
+	2000 4900 2100 4900
+Connection ~ 2100 4900
+Wire Wire Line
+	5000 1200 5100 1200
+Wire Wire Line
+	5300 1200 5400 1200
+Wire Wire Line
+	5000 1600 5100 1600
+Wire Wire Line
+	6800 1200 6900 1200
+Wire Wire Line
+	7100 1200 7200 1200
+Wire Wire Line
+	6800 1600 6900 1600
+Wire Wire Line
+	7100 1600 7200 1600
+Wire Wire Line
+	8600 1200 8700 1200
+Wire Wire Line
+	8900 1200 9000 1200
+Wire Wire Line
+	8600 1600 8700 1600
+Wire Wire Line
+	8900 1600 9000 1600
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5BB79266
+P 9700 6700
+F 0 "TP2" V 9654 6888 50  0000 L CNN
+F 1 "GNDD" V 9745 6888 50  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9900 6700 50  0001 C CNN
+F 3 "~" H 9900 6700 50  0001 C CNN
+	1    9700 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5BB7963D
+P 9800 3600
+F 0 "TP3" V 9754 3788 50  0000 L CNN
+F 1 "5V" V 9845 3788 50  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 10000 3600 50  0001 C CNN
+F 3 "~" H 10000 3600 50  0001 C CNN
+	1    9800 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 9800 3600
+Wire Wire Line
+	1400 6700 1900 6700
+Connection ~ 1400 6700
+Wire Wire Line
+	1400 1400 1400 1500
+Wire Wire Line
+	1700 1500 1700 1400
+Wire Wire Line
+	2000 1500 2000 1400
+Wire Wire Line
+	2000 1500 2400 1500
+Connection ~ 2000 1500
+Wire Wire Line
+	2400 1400 2400 1500
+Wire Wire Line
+	2700 1400 2700 1500
+Wire Wire Line
+	2700 1500 2400 1500
+Connection ~ 2400 1500
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U12
+U 1 1 5BB5FBEF
+P 9700 5200
+F 0 "U12" H 9700 5300 50  0000 C CNN
+F 1 "ATmega328P-AU" H 9700 5200 50  0000 C CNN
+F 2 "myFoot:my_TQFP-32" H 9700 5200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 9700 5200 50  0001 C CNN
+	1    9700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:MCP4922-ESL U13
+U 1 1 5BB60790
+P 12500 3200
+F 0 "U13" H 11900 3800 50  0000 L CNN
+F 1 "MCP4922" H 11900 3700 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 12500 3200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21897a.pdf" H 12500 3200 50  0001 C CNN
+	1    12500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LP2950-3.3_TO92 U10
+U 1 1 5BB61C04
+P 5400 6400
+F 0 "U10" H 5400 6642 50  0000 C CNN
+F 1 "LP2950-3.3" H 5400 6551 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5400 6625 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2950-n.pdf" H 5400 6350 50  0001 C CNN
+	1    5400 6400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 6700
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5BB62282
+P 6200 6300
+F 0 "#PWR0104" H 6200 6150 50  0001 C CNN
+F 1 "+3.3V" H 6215 6473 50  0000 C CNN
+F 2 "" H 6200 6300 50  0001 C CNN
+F 3 "" H 6200 6300 50  0001 C CNN
+	1    6200 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R31
+U 1 1 5BBCBFFC
+P 10700 5300
+F 0 "R31" H 10759 5346 50  0000 L CNN
+F 1 "10k" H 10759 5255 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 10700 5300 50  0001 C CNN
+F 3 "~" H 10700 5300 50  0001 C CNN
+	1    10700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5500 10700 5500
+Connection ~ 9700 6700
+Text Label 5000 1600 2    50   ~ 0
+BASS+
+Text Label 6800 1200 2    50   ~ 0
+MID-
+Text Label 8600 1200 2    50   ~ 0
+TRE-
+Text Label 6800 1600 2    50   ~ 0
+MID+
+Text Label 8600 1600 2    50   ~ 0
+TRE+
+$Comp
+L Regulator_Linear:LP2950-5.0_TO92 U11
+U 1 1 5BC58D5A
+P 1900 6400
+F 0 "U11" H 1900 6642 50  0000 C CNN
+F 1 "LP2950-5.0" H 1900 6551 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 1900 6625 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2950-n.pdf" H 1900 6350 50  0001 C CNN
+	1    1900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5BC591C4
+P 4900 6600
+F 0 "C29" H 4992 6646 50  0000 L CNN
+F 1 "100n" H 4992 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 4900 6600 50  0001 C CNN
+F 3 "~" H 4900 6600 50  0001 C CNN
+	1    4900 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6300 4900 6400
+Wire Wire Line
+	5100 6400 4900 6400
+Connection ~ 4900 6400
+Wire Wire Line
+	4900 6400 4900 6500
+$Comp
+L power:GNDD #PWR0115
+U 1 1 5BC6BC2E
+P 5400 6700
+F 0 "#PWR0115" H 5400 6450 50  0001 C CNN
+F 1 "GNDD" H 5404 6545 50  0000 C CNN
+F 2 "" H 5400 6700 50  0001 C CNN
+F 3 "" H 5400 6700 50  0001 C CNN
+	1    5400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0117
+U 1 1 5BC6BDFB
+P 5800 6700
+F 0 "#PWR0117" H 5800 6450 50  0001 C CNN
+F 1 "GNDD" H 5804 6545 50  0000 C CNN
+F 2 "" H 5800 6700 50  0001 C CNN
+F 3 "" H 5800 6700 50  0001 C CNN
+	1    5800 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6400 5800 6400
+Wire Wire Line
+	5800 6400 5800 6500
+Connection ~ 5800 6400
+Wire Wire Line
+	6200 6400 6200 6300
+Wire Wire Line
+	5800 6400 6200 6400
+$Comp
+L power:+5V #PWR0118
+U 1 1 5BC92C80
+P 2700 6300
+F 0 "#PWR0118" H 2700 6150 50  0001 C CNN
+F 1 "+5V" H 2715 6473 50  0000 C CNN
+F 2 "" H 2700 6300 50  0001 C CNN
+F 3 "" H 2700 6300 50  0001 C CNN
+	1    2700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5BC92E3E
+P 5300 1400
+F 0 "#PWR0119" H 5300 1250 50  0001 C CNN
+F 1 "+5V" H 5175 1450 50  0000 C CNN
+F 2 "" H 5300 1400 50  0001 C CNN
+F 3 "" H 5300 1400 50  0001 C CNN
+	1    5300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1600 5400 1600
+Wire Wire Line
+	5300 1000 5400 1000
+Wire Wire Line
+	5400 1400 5300 1400
+$Comp
+L power:+5V #PWR0120
+U 1 1 5BD5EDB0
+P 5300 1000
+F 0 "#PWR0120" H 5300 850 50  0001 C CNN
+F 1 "+5V" H 5175 1050 50  0000 C CNN
+F 2 "" H 5300 1000 50  0001 C CNN
+F 3 "" H 5300 1000 50  0001 C CNN
+	1    5300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 5BD5EFD2
+P 7100 1000
+F 0 "#PWR0121" H 7100 850 50  0001 C CNN
+F 1 "+5V" H 6975 1050 50  0000 C CNN
+F 2 "" H 7100 1000 50  0001 C CNN
+F 3 "" H 7100 1000 50  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 5BD5F11E
+P 7100 1400
+F 0 "#PWR0122" H 7100 1250 50  0001 C CNN
+F 1 "+5V" H 6975 1450 50  0000 C CNN
+F 2 "" H 7100 1400 50  0001 C CNN
+F 3 "" H 7100 1400 50  0001 C CNN
+	1    7100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5BD5F1FF
+P 8900 1000
+F 0 "#PWR0123" H 8900 850 50  0001 C CNN
+F 1 "+5V" H 8775 1050 50  0000 C CNN
+F 2 "" H 8900 1000 50  0001 C CNN
+F 3 "" H 8900 1000 50  0001 C CNN
+	1    8900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0124
+U 1 1 5BD5F34B
+P 8900 1400
+F 0 "#PWR0124" H 8900 1250 50  0001 C CNN
+F 1 "+5V" H 8775 1450 50  0000 C CNN
+F 2 "" H 8900 1400 50  0001 C CNN
+F 3 "" H 8900 1400 50  0001 C CNN
+	1    8900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1000 8900 1000
+Wire Wire Line
+	9000 1400 8900 1400
+Wire Wire Line
+	7200 1000 7100 1000
+Wire Wire Line
+	7200 1400 7100 1400
+NoConn ~ 9100 4000
+NoConn ~ 9100 4200
+NoConn ~ 9100 4300
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 5BDE6A3B
+P 12600 2700
+F 0 "#PWR0125" H 12600 2550 50  0001 C CNN
+F 1 "+3.3V" H 12615 2873 50  0000 C CNN
+F 2 "" H 12600 2700 50  0001 C CNN
+F 3 "" H 12600 2700 50  0001 C CNN
+	1    12600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0126
+U 1 1 5BDE6B18
+P 12900 3700
+F 0 "#PWR0126" H 12900 3550 50  0001 C CNN
+F 1 "+3.3V" H 12915 3873 50  0000 C CNN
+F 2 "" H 12900 3700 50  0001 C CNN
+F 3 "" H 12900 3700 50  0001 C CNN
+	1    12900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0127
+U 1 1 5BDE6DA5
+P 12400 3700
+F 0 "#PWR0127" H 12400 3450 50  0001 C CNN
+F 1 "GNDD" H 12404 3545 50  0000 C CNN
+F 2 "" H 12400 3700 50  0001 C CNN
+F 3 "" H 12400 3700 50  0001 C CNN
+	1    12400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 3700 12900 3800
+Wire Wire Line
+	12900 3800 12600 3800
+Wire Wire Line
+	12600 3800 12600 3700
+Text Label 13100 3000 0    50   ~ 0
+BASS+
+Text Label 13100 3400 0    50   ~ 0
+BASS-
+NoConn ~ 10300 4600
+NoConn ~ 10300 4700
+Text Label 10400 4300 0    39   ~ 0
+MOSI
+Text Label 10400 4500 0    39   ~ 0
+SCK
+Wire Wire Line
+	10300 4300 10600 4300
+Wire Wire Line
+	10300 4400 10600 4400
+Wire Wire Line
+	10300 4500 10600 4500
+Text Label 11900 3100 2    39   ~ 0
+SCK
+Text Label 11900 3300 2    39   ~ 0
+LDAC
+Text Label 11900 3000 2    39   ~ 0
+MOSI
+Text Label 11900 3200 2    39   ~ 0
+SS1
+Wire Wire Line
+	11900 3400 11800 3400
+Wire Wire Line
+	11800 3400 11800 3800
+Wire Wire Line
+	11800 3800 12000 3800
+Wire Wire Line
+	10300 6000 10500 6000
+NoConn ~ 10300 6100
+NoConn ~ 10300 6200
+NoConn ~ 10300 6300
+Text Label 10400 4200 0    39   ~ 0
+SS1
+Text Label 10400 4100 0    39   ~ 0
+SS2
+Text Label 10400 4000 0    39   ~ 0
+SS3
+Wire Wire Line
+	10400 4000 10300 4000
+Wire Wire Line
+	10300 4100 10400 4100
+Wire Wire Line
+	10400 4200 10300 4200
+$Comp
+L Analog_DAC:MCP4922-ESL U14
+U 1 1 5C0B237B
+P 12500 4700
+F 0 "U14" H 11900 5300 50  0000 L CNN
+F 1 "MCP4922" H 11900 5200 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 12500 4700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21897a.pdf" H 12500 4700 50  0001 C CNN
+	1    12500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 5C0B2381
+P 12600 4200
+F 0 "#PWR0129" H 12600 4050 50  0001 C CNN
+F 1 "+3.3V" H 12615 4373 50  0000 C CNN
+F 2 "" H 12600 4200 50  0001 C CNN
+F 3 "" H 12600 4200 50  0001 C CNN
+	1    12600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0130
+U 1 1 5C0B2387
+P 12900 5200
+F 0 "#PWR0130" H 12900 5050 50  0001 C CNN
+F 1 "+3.3V" H 12915 5373 50  0000 C CNN
+F 2 "" H 12900 5200 50  0001 C CNN
+F 3 "" H 12900 5200 50  0001 C CNN
+	1    12900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0131
+U 1 1 5C0B238D
+P 12400 5200
+F 0 "#PWR0131" H 12400 4950 50  0001 C CNN
+F 1 "GNDD" H 12404 5045 50  0000 C CNN
+F 2 "" H 12400 5200 50  0001 C CNN
+F 3 "" H 12400 5200 50  0001 C CNN
+	1    12400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 5200 12900 5300
+Wire Wire Line
+	12900 5300 12600 5300
+Wire Wire Line
+	12600 5300 12600 5200
+Text Label 13100 4500 0    50   ~ 0
+MID+
+Text Label 13100 4900 0    50   ~ 0
+MID-
+Text Label 11900 4600 2    39   ~ 0
+SCK
+Text Label 11900 4800 2    39   ~ 0
+LDAC
+Text Label 11900 4500 2    39   ~ 0
+MOSI
+Text Label 11900 4700 2    39   ~ 0
+SS2
+Wire Wire Line
+	11900 4900 11800 4900
+Wire Wire Line
+	11800 4900 11800 5300
+Wire Wire Line
+	11800 5300 12000 5300
+$Comp
+L Analog_DAC:MCP4922-ESL U15
+U 1 1 5C0C7DF1
+P 12500 6200
+F 0 "U15" H 11900 6800 50  0000 L CNN
+F 1 "MCP4922" H 11900 6700 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 12500 6200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21897a.pdf" H 12500 6200 50  0001 C CNN
+	1    12500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0133
+U 1 1 5C0C7DF7
+P 12600 5700
+F 0 "#PWR0133" H 12600 5550 50  0001 C CNN
+F 1 "+3.3V" H 12615 5873 50  0000 C CNN
+F 2 "" H 12600 5700 50  0001 C CNN
+F 3 "" H 12600 5700 50  0001 C CNN
+	1    12600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5C0C7DFD
+P 12900 6700
+F 0 "#PWR0134" H 12900 6550 50  0001 C CNN
+F 1 "+3.3V" H 12915 6873 50  0000 C CNN
+F 2 "" H 12900 6700 50  0001 C CNN
+F 3 "" H 12900 6700 50  0001 C CNN
+	1    12900 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0135
+U 1 1 5C0C7E03
+P 12400 6700
+F 0 "#PWR0135" H 12400 6450 50  0001 C CNN
+F 1 "GNDD" H 12404 6545 50  0000 C CNN
+F 2 "" H 12400 6700 50  0001 C CNN
+F 3 "" H 12400 6700 50  0001 C CNN
+	1    12400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 6700 12900 6800
+Wire Wire Line
+	12900 6800 12600 6800
+Wire Wire Line
+	12600 6800 12600 6700
+Text Label 13100 6000 0    50   ~ 0
+TRE+
+Text Label 13100 6400 0    50   ~ 0
+TRE-
+Text Label 11900 6100 2    39   ~ 0
+SCK
+Text Label 11900 6300 2    39   ~ 0
+LDAC
+Text Label 11900 6000 2    39   ~ 0
+MOSI
+Text Label 11900 6200 2    39   ~ 0
+SS3
+Wire Wire Line
+	11900 6400 11800 6400
+Wire Wire Line
+	11800 6400 11800 6800
+Wire Wire Line
+	11800 6800 12000 6800
+Text Label 10400 6400 0    39   ~ 0
+LDAC
+Wire Wire Line
+	10300 6400 10400 6400
+$Comp
+L Device:C_Small C27
+U 1 1 5BB5B6D2
+P 4300 6600
+F 0 "C27" H 4392 6646 50  0000 L CNN
+F 1 "100n" H 4392 6555 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 4300 6600 50  0001 C CNN
+F 3 "~" H 4300 6600 50  0001 C CNN
+	1    4300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR05
+U 1 1 5BB5B6D8
+P 4300 6700
+F 0 "#PWR05" H 4300 6450 50  0001 C CNN
+F 1 "GNDD" H 4304 6545 50  0000 C CNN
+F 2 "" H 4300 6700 50  0001 C CNN
+F 3 "" H 4300 6700 50  0001 C CNN
+	1    4300 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6500 4300 6400
+Wire Wire Line
+	3900 6400 4300 6400
+Connection ~ 3900 6400
+$Comp
+L power:+5V #PWR0105
+U 1 1 5BB71CFF
+P 12900 1700
+F 0 "#PWR0105" H 12900 1550 50  0001 C CNN
+F 1 "+5V" H 12915 1873 50  0000 C CNN
+F 2 "" H 12900 1700 50  0001 C CNN
+F 3 "" H 12900 1700 50  0001 C CNN
+	1    12900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5BB72B74
+P 9800 3600
+F 0 "#PWR0106" H 9800 3450 50  0001 C CNN
+F 1 "+5V" H 9815 3773 50  0000 C CNN
+F 2 "" H 9800 3600 50  0001 C CNN
+F 3 "" H 9800 3600 50  0001 C CNN
+	1    9800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5BB72D9B
+P 12400 2700
+F 0 "#PWR0107" H 12400 2550 50  0001 C CNN
+F 1 "+5V" H 12415 2873 50  0000 C CNN
+F 2 "" H 12400 2700 50  0001 C CNN
+F 3 "" H 12400 2700 50  0001 C CNN
+	1    12400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5BB72F56
+P 12400 4200
+F 0 "#PWR0108" H 12400 4050 50  0001 C CNN
+F 1 "+5V" H 12415 4373 50  0000 C CNN
+F 2 "" H 12400 4200 50  0001 C CNN
+F 3 "" H 12400 4200 50  0001 C CNN
+	1    12400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5BB73111
+P 12400 5700
+F 0 "#PWR0109" H 12400 5550 50  0001 C CNN
+F 1 "+5V" H 12415 5873 50  0000 C CNN
+F 2 "" H 12400 5700 50  0001 C CNN
+F 3 "" H 12400 5700 50  0001 C CNN
+	1    12400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 5BB73557
+P 12000 3800
+F 0 "#PWR0110" H 12000 3650 50  0001 C CNN
+F 1 "+5V" H 12015 3973 50  0000 C CNN
+F 2 "" H 12000 3800 50  0001 C CNN
+F 3 "" H 12000 3800 50  0001 C CNN
+	1    12000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5BB736A6
+P 12000 5300
+F 0 "#PWR0111" H 12000 5150 50  0001 C CNN
+F 1 "+5V" H 12015 5473 50  0000 C CNN
+F 2 "" H 12000 5300 50  0001 C CNN
+F 3 "" H 12000 5300 50  0001 C CNN
+	1    12000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5BB73789
+P 12000 6800
+F 0 "#PWR0112" H 12000 6650 50  0001 C CNN
+F 1 "+5V" H 12015 6973 50  0000 C CNN
+F 2 "" H 12000 6800 50  0001 C CNN
+F 3 "" H 12000 6800 50  0001 C CNN
+	1    12000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0128
+U 1 1 5BB73CA5
+P 10700 5100
+F 0 "#PWR0128" H 10700 4950 50  0001 C CNN
+F 1 "+5V" H 10715 5273 50  0000 C CNN
+F 2 "" H 10700 5100 50  0001 C CNN
+F 3 "" H 10700 5100 50  0001 C CNN
+	1    10700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 5BB8AA72
+P 7300 6100
+F 0 "#PWR0132" H 7300 5950 50  0001 C CNN
+F 1 "+5V" H 7315 6273 50  0000 C CNN
+F 2 "" H 7300 6100 50  0001 C CNN
+F 3 "" H 7300 6100 50  0001 C CNN
+	1    7300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 5BB8ABC1
+P 8600 5900
+F 0 "#PWR0136" H 8600 5750 50  0001 C CNN
+F 1 "+5V" H 8615 6073 50  0000 C CNN
+F 2 "" H 8600 5900 50  0001 C CNN
+F 3 "" H 8600 5900 50  0001 C CNN
+	1    8600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0137
+U 1 1 5BB8ACA4
+P 11100 1700
+F 0 "#PWR0137" H 11100 1550 50  0001 C CNN
+F 1 "+5V" H 11115 1873 50  0000 C CNN
+F 2 "" H 11100 1700 50  0001 C CNN
+F 3 "" H 11100 1700 50  0001 C CNN
+	1    11100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0138
+U 1 1 5BB8AD87
+P 11700 1700
+F 0 "#PWR0138" H 11700 1550 50  0001 C CNN
+F 1 "+5V" H 11715 1873 50  0000 C CNN
+F 2 "" H 11700 1700 50  0001 C CNN
+F 3 "" H 11700 1700 50  0001 C CNN
+	1    11700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 5BB8AE6A
+P 12300 1700
+F 0 "#PWR0139" H 12300 1550 50  0001 C CNN
+F 1 "+5V" H 12315 1873 50  0000 C CNN
+F 2 "" H 12300 1700 50  0001 C CNN
+F 3 "" H 12300 1700 50  0001 C CNN
+	1    12300 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10300 5700
+$Comp
+L Device:C_Small C30
+U 1 1 5BBD1115
+P 5800 6600
+F 0 "C30" H 5892 6646 50  0000 L CNN
+F 1 "10u" H 5892 6555 50  0000 L CNN
+F 2 "myFoot:my_C_3216(1206)_HandSoldering" H 5800 6600 50  0001 C CNN
+F 3 "~" H 5800 6600 50  0001 C CNN
+	1    5800 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5BBD1346
+P 2800 2900
+F 0 "C16" H 2892 2946 50  0000 L CNN
+F 1 "10u" H 2892 2855 50  0000 L CNN
+F 2 "myFoot:my_C_3216(1206)_HandSoldering" H 2800 2900 50  0001 C CNN
+F 3 "~" H 2800 2900 50  0001 C CNN
+	1    2800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5BBD145C
+P 3600 2900
+F 0 "C17" H 3692 2946 50  0000 L CNN
+F 1 "10u" H 3692 2855 50  0000 L CNN
+F 2 "myFoot:my_C_3216(1206)_HandSoldering" H 3600 2900 50  0001 C CNN
+F 3 "~" H 3600 2900 50  0001 C CNN
+	1    3600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 5BBD2573
+P 4900 6300
+F 0 "#PWR0114" H 4900 6150 50  0001 C CNN
+F 1 "+5V" H 4915 6473 50  0000 C CNN
+F 2 "" H 4900 6300 50  0001 C CNN
+F 3 "" H 4900 6300 50  0001 C CNN
+	1    4900 6300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10300 5800
+Wire Wire Line
+	10300 5900 10500 5900
+Wire Wire Line
+	10500 5900 10500 5800
+Wire Wire Line
+	10500 5800 10900 5800
+$Comp
+L power:GNDD #PWR0113
+U 1 1 5BBBC13A
+P 4900 6700
+F 0 "#PWR0113" H 4900 6450 50  0001 C CNN
+F 1 "GNDD" H 4904 6545 50  0000 C CNN
+F 2 "" H 4900 6700 50  0001 C CNN
+F 3 "" H 4900 6700 50  0001 C CNN
+	1    4900 6700
+	1    0    0    -1  
+$EndComp
+Text Notes 975  3900 0    100  ~ 0
+Tremolec\nDecember 2018\ndrugscore.blog.fc2.com
+Text Notes 10725 2125 0    50   ~ 0
+TREBLE           MID          BASS          RATE 
+Text Notes 3200 3775 0    50   ~ 0
+LEVEL
+$EndSCHEMATC
