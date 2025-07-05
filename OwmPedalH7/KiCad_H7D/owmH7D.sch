@@ -1,0 +1,2209 @@
+EESchema Schematic File Version 4
+LIBS:owmH-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED_Small D1
+U 1 1 5B77A2AA
+P 5900 5300
+F 0 "D1" H 6000 5350 50  0000 C CNN
+F 1 "LED" H 5900 5450 50  0000 C CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" V 5900 5300 50  0001 C CNN
+F 3 "~" V 5900 5300 50  0001 C CNN
+	1    5900 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5BACFECE
+P 5600 5300
+F 0 "R5" V 5500 5300 50  0000 C CNN
+F 1 "1k" V 5700 5300 50  0000 C CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 5600 5300 50  0001 C CNN
+F 3 "~" H 5600 5300 50  0001 C CNN
+	1    5600 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 5300 5700 5300
+$Comp
+L power:+9V #PWR023
+U 1 1 5BACCDA0
+P 6300 6700
+F 0 "#PWR023" H 6300 6550 50  0001 C CNN
+F 1 "+9V" H 6315 6873 50  0000 C CNN
+F 2 "" H 6300 6700 50  0001 C CNN
+F 3 "" H 6300 6700 50  0001 C CNN
+	1    6300 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BAF07A1
+P 6300 6700
+F 0 "#FLG01" H 6300 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 6874 50  0001 C CNN
+F 2 "" H 6300 6700 50  0001 C CNN
+F 3 "~" H 6300 6700 50  0001 C CNN
+	1    6300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR031
+U 1 1 5BB62282
+P 7800 4400
+F 0 "#PWR031" H 7800 4250 50  0001 C CNN
+F 1 "+3.3V" H 7815 4573 50  0000 C CNN
+F 2 "" H 7800 4400 50  0001 C CNN
+F 3 "" H 7800 4400 50  0001 C CNN
+	1    7800 4400
+	1    0    0    -1  
+$EndComp
+Text Label 6400 2300 0    50   ~ 0
+LDAC-
+Text Label 6400 2100 0    50   ~ 0
+RDAC+
+Text Label 6400 2000 0    50   ~ 0
+RDAC-
+$Comp
+L power:+5VD #PWR027
+U 1 1 5C02C31F
+P 6100 4400
+F 0 "#PWR027" H 6100 4250 50  0001 C CNN
+F 1 "+5VD" H 6115 4573 50  0000 C CNN
+F 2 "" H 6100 4400 50  0001 C CNN
+F 3 "" H 6100 4400 50  0001 C CNN
+	1    6100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5C04660D
+P 6100 4700
+F 0 "C10" H 6192 4746 50  0000 L CNN
+F 1 "100n" H 6192 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 6100 4700 50  0001 C CNN
+F 3 "~" H 6100 4700 50  0001 C CNN
+	1    6100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR026
+U 1 1 5C046613
+P 6100 4800
+F 0 "#PWR026" H 6100 4550 50  0001 C CNN
+F 1 "GNDD" H 6104 4645 50  0000 C CNN
+F 2 "" H 6100 4800 50  0001 C CNN
+F 3 "" H 6100 4800 50  0001 C CNN
+	1    6100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4600 6100 4500
+$Comp
+L power:GNDD #PWR029
+U 1 1 5C0628C3
+P 7000 4800
+F 0 "#PWR029" H 7000 4550 50  0001 C CNN
+F 1 "GNDD" H 7004 4645 50  0000 C CNN
+F 2 "" H 7000 4800 50  0001 C CNN
+F 3 "" H 7000 4800 50  0001 C CNN
+	1    7000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5C0628C9
+P 6500 4700
+F 0 "C11" H 6592 4746 50  0000 L CNN
+F 1 "100n" H 6592 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 6500 4700 50  0001 C CNN
+F 3 "~" H 6500 4700 50  0001 C CNN
+	1    6500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5C0628CF
+P 7800 4700
+F 0 "C13" H 7892 4746 50  0000 L CNN
+F 1 "100n" H 7892 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 7800 4700 50  0001 C CNN
+F 3 "~" H 7800 4700 50  0001 C CNN
+	1    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR032
+U 1 1 5C0628D5
+P 7800 4800
+F 0 "#PWR032" H 7800 4550 50  0001 C CNN
+F 1 "GNDD" H 7804 4645 50  0000 C CNN
+F 2 "" H 7800 4800 50  0001 C CNN
+F 3 "" H 7800 4800 50  0001 C CNN
+	1    7800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4500 6500 4500
+Wire Wire Line
+	6500 4500 6500 4600
+Wire Wire Line
+	7800 4500 7800 4400
+Wire Wire Line
+	7800 4600 7800 4500
+Connection ~ 7800 4500
+Text Label 9500 2600 0    50   ~ 0
+RADC+
+Text Label 9500 1800 0    50   ~ 0
+LDAC+
+Text Label 9500 1700 0    50   ~ 0
+LDAC-
+Text Label 9500 2300 0    50   ~ 0
+LADC+
+Text Label 9500 2400 0    50   ~ 0
+LADC-
+Text Label 9500 1900 0    50   ~ 0
+RDAC+
+Text Label 9500 2000 0    50   ~ 0
+RDAC-
+Text Label 9500 2700 0    50   ~ 0
+RADC-
+$Comp
+L myLib:V4220M U1
+U 1 1 5C0BBA7A
+P 8900 2200
+F 0 "U1" H 8900 2300 50  0000 C CNN
+F 1 "V4220M" H 8900 2200 50  0000 C CNN
+F 2 "myFoot:my_SSOP-28_5.3x10.2mm_Pitch0.65mm" H 8900 1850 50  0001 C CNN
+F 3 "" H 8900 1850 50  0001 C CNN
+	1    8900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1700 9400 1700
+Wire Wire Line
+	9500 1800 9400 1800
+Wire Wire Line
+	9400 2300 9500 2300
+Wire Wire Line
+	9500 2400 9400 2400
+Wire Wire Line
+	9400 2600 9500 2600
+Wire Wire Line
+	9500 2700 9400 2700
+$Comp
+L Device:R_Small R2
+U 1 1 5C11FB85
+P 9900 1400
+F 0 "R2" H 9959 1446 50  0000 L CNN
+F 1 "10k" H 9959 1355 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 9900 1400 50  0001 C CNN
+F 3 "~" H 9900 1400 50  0001 C CNN
+	1    9900 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3200 8900 3200
+Wire Wire Line
+	8700 3200 8800 3200
+Wire Wire Line
+	8900 3200 8800 3200
+Connection ~ 8900 3200
+Connection ~ 8800 3200
+Wire Wire Line
+	8700 3200 8600 3200
+Connection ~ 8700 3200
+Connection ~ 8600 3200
+Wire Wire Line
+	9400 2500 9900 2500
+Wire Wire Line
+	9900 1500 9900 1600
+Wire Wire Line
+	9900 1600 9400 1600
+Wire Wire Line
+	9900 1300 9900 1200
+$Comp
+L power:GNDA #PWR011
+U 1 1 5C216AA6
+P 9200 3200
+F 0 "#PWR011" H 9200 2950 50  0001 C CNN
+F 1 "GNDA" H 9205 3027 50  0000 C CNN
+F 2 "" H 9200 3200 50  0001 C CNN
+F 3 "" H 9200 3200 50  0001 C CNN
+	1    9200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR012
+U 1 1 5C216FFD
+P 9900 1900
+F 0 "#PWR012" H 9900 1650 50  0001 C CNN
+F 1 "GNDD" H 9904 1745 50  0000 C CNN
+F 2 "" H 9900 1900 50  0001 C CNN
+F 3 "" H 9900 1900 50  0001 C CNN
+	1    9900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5C2228D5
+P 7850 1100
+F 0 "Y1" H 7850 1325 50  0000 C CNN
+F 1 "11.2896MHz" H 7850 1234 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 7850 1100 50  0001 C CNN
+F 3 "~" H 7850 1100 50  0001 C CNN
+	1    7850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5C222E5E
+P 7600 1300
+F 0 "C1" H 7692 1346 50  0000 L CNN
+F 1 "18p" H 7692 1255 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 7600 1300 50  0001 C CNN
+F 3 "~" H 7600 1300 50  0001 C CNN
+	1    7600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5C2237B2
+P 8100 1300
+F 0 "C2" H 8192 1346 50  0000 L CNN
+F 1 "18p" H 8192 1255 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 8100 1300 50  0001 C CNN
+F 3 "~" H 8100 1300 50  0001 C CNN
+	1    8100 1300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1600 8300 1100
+Wire Wire Line
+	7600 1200 7600 1100
+Wire Wire Line
+	8100 1200 8100 1100
+Connection ~ 8100 1100
+Wire Wire Line
+	8100 1100 8300 1100
+$Comp
+L power:GNDD #PWR04
+U 1 1 5C296B10
+P 7600 1400
+F 0 "#PWR04" H 7600 1150 50  0001 C CNN
+F 1 "GNDD" H 7604 1245 50  0000 C CNN
+F 2 "" H 7600 1400 50  0001 C CNN
+F 3 "" H 7600 1400 50  0001 C CNN
+	1    7600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR06
+U 1 1 5C296BD3
+P 8100 1400
+F 0 "#PWR06" H 8100 1150 50  0001 C CNN
+F 1 "GNDD" H 8104 1245 50  0000 C CNN
+F 2 "" H 8100 1400 50  0001 C CNN
+F 3 "" H 8100 1400 50  0001 C CNN
+	1    8100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1100 7400 1700
+Wire Wire Line
+	7400 1100 7600 1100
+Wire Wire Line
+	8400 1800 8300 1800
+Text Label 8300 1800 2    50   ~ 0
+LRCK
+Text Label 8300 1900 2    50   ~ 0
+BCK
+Wire Wire Line
+	8300 1900 8400 1900
+Text Label 7700 1900 2    50   ~ 0
+ADCDATA
+Text Label 8300 2300 2    50   ~ 0
+DACDATA
+Wire Wire Line
+	8400 2300 8300 2300
+Wire Wire Line
+	7950 1100 8100 1100
+Wire Wire Line
+	7750 1100 7600 1100
+Connection ~ 7600 1100
+Wire Wire Line
+	8400 1600 8300 1600
+Wire Wire Line
+	8400 1700 7400 1700
+Wire Wire Line
+	8400 2600 8100 2600
+Wire Wire Line
+	8400 2500 8300 2500
+Wire Wire Line
+	8300 2500 8300 2400
+Wire Wire Line
+	8300 2400 8400 2400
+Wire Wire Line
+	8300 2500 8300 3200
+Connection ~ 8300 2500
+Wire Wire Line
+	8300 3200 8600 3200
+$Comp
+L Device:C_Small C14
+U 1 1 5C41518C
+P 8200 4700
+F 0 "C14" H 8292 4746 50  0000 L CNN
+F 1 "100n" H 8292 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 8200 4700 50  0001 C CNN
+F 3 "~" H 8200 4700 50  0001 C CNN
+	1    8200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5C415290
+P 8600 4700
+F 0 "C15" H 8692 4746 50  0000 L CNN
+F 1 "100n" H 8692 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 8600 4700 50  0001 C CNN
+F 3 "~" H 8600 4700 50  0001 C CNN
+	1    8600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5C415360
+P 9000 4700
+F 0 "C16" H 9092 4746 50  0000 L CNN
+F 1 "100n" H 9092 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 9000 4700 50  0001 C CNN
+F 3 "~" H 9000 4700 50  0001 C CNN
+	1    9000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR033
+U 1 1 5C444733
+P 8200 4800
+F 0 "#PWR033" H 8200 4550 50  0001 C CNN
+F 1 "GNDD" H 8204 4645 50  0000 C CNN
+F 2 "" H 8200 4800 50  0001 C CNN
+F 3 "" H 8200 4800 50  0001 C CNN
+	1    8200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR034
+U 1 1 5C4447F6
+P 8600 4800
+F 0 "#PWR034" H 8600 4550 50  0001 C CNN
+F 1 "GNDD" H 8604 4645 50  0000 C CNN
+F 2 "" H 8600 4800 50  0001 C CNN
+F 3 "" H 8600 4800 50  0001 C CNN
+	1    8600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR036
+U 1 1 5C4448B9
+P 9000 4800
+F 0 "#PWR036" H 9000 4550 50  0001 C CNN
+F 1 "GNDD" H 9004 4645 50  0000 C CNN
+F 2 "" H 9000 4800 50  0001 C CNN
+F 3 "" H 9000 4800 50  0001 C CNN
+	1    9000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4500 8200 4500
+Wire Wire Line
+	8200 4500 8200 4600
+Wire Wire Line
+	8200 4500 8600 4500
+Wire Wire Line
+	8600 4500 8600 4600
+Connection ~ 8200 4500
+Wire Wire Line
+	9000 4600 9000 4500
+Wire Wire Line
+	9000 4500 8600 4500
+Connection ~ 8600 4500
+$Comp
+L Device:R_Small R3
+U 1 1 5C467899
+P 2000 2300
+F 0 "R3" H 2059 2346 50  0000 L CNN
+F 1 "10k" H 2059 2255 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 2000 2300 50  0001 C CNN
+F 3 "~" H 2000 2300 50  0001 C CNN
+	1    2000 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5C4679BD
+P 3100 1300
+F 0 "R4" H 3159 1346 50  0000 L CNN
+F 1 "10k" H 3159 1255 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 3100 1300 50  0001 C CNN
+F 3 "~" H 3100 1300 50  0001 C CNN
+	1    3100 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR020
+U 1 1 5C467FA9
+P 3900 1100
+F 0 "#PWR020" H 3900 950 50  0001 C CNN
+F 1 "+3.3V" H 3915 1273 50  0000 C CNN
+F 2 "" H 3900 1100 50  0001 C CNN
+F 3 "" H 3900 1100 50  0001 C CNN
+	1    3900 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1200 3100 1100
+Connection ~ 3900 1100
+Wire Wire Line
+	3900 1100 4000 1100
+Wire Wire Line
+	3200 1600 3100 1600
+$Comp
+L Device:C_Small C7
+U 1 1 5C48D573
+P 2600 2300
+F 0 "C7" H 2692 2346 50  0000 L CNN
+F 1 "2u2" H 2692 2255 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 2600 2300 50  0001 C CNN
+F 3 "~" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5C48D812
+P 2300 2300
+F 0 "C5" H 2392 2346 50  0000 L CNN
+F 1 "2u2" H 2392 2255 50  0000 L CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 2300 2300 50  0001 C CNN
+F 3 "~" H 2300 2300 50  0001 C CNN
+	1    2300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR017
+U 1 1 5C48E010
+P 2600 2400
+F 0 "#PWR017" H 2600 2150 50  0001 C CNN
+F 1 "GNDD" H 2604 2245 50  0000 C CNN
+F 2 "" H 2600 2400 50  0001 C CNN
+F 3 "" H 2600 2400 50  0001 C CNN
+	1    2600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR015
+U 1 1 5C48E313
+P 2300 2400
+F 0 "#PWR015" H 2300 2150 50  0001 C CNN
+F 1 "GNDD" H 2304 2245 50  0000 C CNN
+F 2 "" H 2300 2400 50  0001 C CNN
+F 3 "" H 2300 2400 50  0001 C CNN
+	1    2300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2100 2600 2200
+Wire Wire Line
+	2300 2000 2300 2200
+$Comp
+L power:GNDD #PWR013
+U 1 1 5C4C1D88
+P 2000 2400
+F 0 "#PWR013" H 2000 2150 50  0001 C CNN
+F 1 "GNDD" H 2004 2245 50  0000 C CNN
+F 2 "" H 2000 2400 50  0001 C CNN
+F 3 "" H 2000 2400 50  0001 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1800 2000 2200
+$Comp
+L power:GNDD #PWR022
+U 1 1 5C4CF248
+P 6100 5400
+F 0 "#PWR022" H 6100 5150 50  0001 C CNN
+F 1 "GNDD" H 6104 5245 50  0000 C CNN
+F 2 "" H 6100 5400 50  0001 C CNN
+F 3 "" H 6100 5400 50  0001 C CNN
+	1    6100 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5300 6100 5300
+Wire Wire Line
+	6100 5300 6100 5400
+Wire Wire Line
+	3900 1300 3900 1100
+Wire Wire Line
+	4000 1300 4000 1100
+Connection ~ 4000 1100
+Wire Wire Line
+	4000 1100 4100 1100
+Wire Wire Line
+	4100 1300 4100 1100
+Connection ~ 4100 1100
+Wire Wire Line
+	4100 1100 4200 1100
+Wire Wire Line
+	4200 1300 4200 1100
+Connection ~ 4200 1100
+Wire Wire Line
+	4200 1100 4300 1100
+Wire Wire Line
+	4300 1300 4300 1100
+Connection ~ 4300 1100
+$Comp
+L power:GNDD #PWR021
+U 1 1 5C53B0AF
+P 4300 6900
+F 0 "#PWR021" H 4300 6650 50  0001 C CNN
+F 1 "GNDD" H 4304 6745 50  0000 C CNN
+F 2 "" H 4300 6900 50  0001 C CNN
+F 3 "" H 4300 6900 50  0001 C CNN
+	1    4300 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6800 4200 6900
+Wire Wire Line
+	4200 6900 4300 6900
+Wire Wire Line
+	4300 6800 4300 6900
+Connection ~ 4300 6900
+$Comp
+L Device:Crystal_Small Y2
+U 1 1 5C57AE04
+P 2250 2800
+F 0 "Y2" H 2100 2900 50  0000 C CNN
+F 1 "8MHz" H 2400 2900 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 2250 2800 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5C57AE0A
+P 2000 3000
+F 0 "C4" H 2092 3046 50  0000 L CNN
+F 1 "20p" H 2092 2955 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 2000 3000 50  0001 C CNN
+F 3 "~" H 2000 3000 50  0001 C CNN
+	1    2000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5C57AE10
+P 2500 3000
+F 0 "C6" H 2592 3046 50  0000 L CNN
+F 1 "20p" H 2592 2955 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 2500 3000 50  0001 C CNN
+F 3 "~" H 2500 3000 50  0001 C CNN
+	1    2500 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2900 2000 2800
+Wire Wire Line
+	2500 2900 2500 2800
+$Comp
+L power:GNDD #PWR014
+U 1 1 5C57AE1A
+P 2000 3100
+F 0 "#PWR014" H 2000 2850 50  0001 C CNN
+F 1 "GNDD" H 2004 2945 50  0000 C CNN
+F 2 "" H 2000 3100 50  0001 C CNN
+F 3 "" H 2000 3100 50  0001 C CNN
+	1    2000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR016
+U 1 1 5C57AE20
+P 2500 3100
+F 0 "#PWR016" H 2500 2850 50  0001 C CNN
+F 1 "GNDD" H 2504 2945 50  0000 C CNN
+F 2 "" H 2500 3100 50  0001 C CNN
+F 3 "" H 2500 3100 50  0001 C CNN
+	1    2500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2800 1800 3400
+Wire Wire Line
+	1800 2800 2000 2800
+Wire Wire Line
+	2350 2800 2500 2800
+Wire Wire Line
+	2150 2800 2000 2800
+Connection ~ 2000 2800
+Wire Wire Line
+	2700 3400 1800 3400
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5C5C91AF
+P 3000 4100
+F 0 "J8" H 3075 4125 39  0000 L CNN
+F 1 "E8" H 3075 4075 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4100 50  0001 C CNN
+F 3 "~" H 3000 4100 50  0001 C CNN
+	1    3000 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J33
+U 1 1 5C63A37A
+P 5200 1700
+F 0 "J33" H 5275 1725 39  0000 L CNN
+F 1 "A1" H 5275 1675 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 1700 50  0001 C CNN
+F 3 "~" H 5200 1700 50  0001 C CNN
+	1    5200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5C068535
+P 3000 4200
+F 0 "J9" H 3075 4225 39  0000 L CNN
+F 1 "E9" H 3075 4175 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4200 50  0001 C CNN
+F 3 "~" H 3000 4200 50  0001 C CNN
+	1    3000 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5C06861F
+P 3000 4300
+F 0 "J10" H 3075 4325 39  0000 L CNN
+F 1 "E10" H 3075 4275 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4300 50  0001 C CNN
+F 3 "~" H 3000 4300 50  0001 C CNN
+	1    3000 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5C06889B
+P 3000 4400
+F 0 "J11" H 3075 4425 39  0000 L CNN
+F 1 "E11" H 3075 4375 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4400 50  0001 C CNN
+F 3 "~" H 3000 4400 50  0001 C CNN
+	1    3000 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5C068979
+P 3000 4500
+F 0 "J12" H 3075 4525 39  0000 L CNN
+F 1 "E12" H 3075 4475 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4500 50  0001 C CNN
+F 3 "~" H 3000 4500 50  0001 C CNN
+	1    3000 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 5C068A59
+P 3000 4600
+F 0 "J13" H 3075 4625 39  0000 L CNN
+F 1 "E13" H 3075 4575 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4600 50  0001 C CNN
+F 3 "~" H 3000 4600 50  0001 C CNN
+	1    3000 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 5C068B3F
+P 3000 4700
+F 0 "J14" H 3075 4725 39  0000 L CNN
+F 1 "E14" H 3075 4675 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4700 50  0001 C CNN
+F 3 "~" H 3000 4700 50  0001 C CNN
+	1    3000 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 5C068D09
+P 3000 5100
+F 0 "J17" H 3075 5125 39  0000 L CNN
+F 1 "D1" H 3075 5075 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5100 50  0001 C CNN
+F 3 "~" H 3000 5100 50  0001 C CNN
+	1    3000 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J34
+U 1 1 5C0695B0
+P 5200 1800
+F 0 "J34" H 5275 1825 39  0000 L CNN
+F 1 "A2" H 5275 1775 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 1800 50  0001 C CNN
+F 3 "~" H 5200 1800 50  0001 C CNN
+	1    5200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J35
+U 1 1 5C0696A4
+P 5200 1900
+F 0 "J35" H 5275 1925 39  0000 L CNN
+F 1 "A3" H 5275 1875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 1900 50  0001 C CNN
+F 3 "~" H 5200 1900 50  0001 C CNN
+	1    5200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J36
+U 1 1 5C06979A
+P 5200 2000
+F 0 "J36" H 5275 2025 39  0000 L CNN
+F 1 "A4" H 5275 1975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 2000 50  0001 C CNN
+F 3 "~" H 5200 2000 50  0001 C CNN
+	1    5200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J37
+U 1 1 5C069892
+P 5200 2100
+F 0 "J37" H 5275 2125 39  0000 L CNN
+F 1 "A5" H 5275 2075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 2100 50  0001 C CNN
+F 3 "~" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J38
+U 1 1 5C06998C
+P 5200 2200
+F 0 "J38" H 5275 2225 39  0000 L CNN
+F 1 "A6" H 5275 2175 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 2200 50  0001 C CNN
+F 3 "~" H 5200 2200 50  0001 C CNN
+	1    5200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J39
+U 1 1 5C069A90
+P 5200 2300
+F 0 "J39" H 5275 2325 39  0000 L CNN
+F 1 "A7" H 5275 2275 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 2300 50  0001 C CNN
+F 3 "~" H 5200 2300 50  0001 C CNN
+	1    5200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J41
+U 1 1 5C069C8E
+P 5200 2500
+F 0 "J41" H 5275 2525 39  0000 L CNN
+F 1 "A9" H 5275 2475 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 2500 50  0001 C CNN
+F 3 "~" H 5200 2500 50  0001 C CNN
+	1    5200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J42
+U 1 1 5C06A028
+P 5200 2600
+F 0 "J42" H 5275 2625 39  0000 L CNN
+F 1 "A10" H 5275 2575 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 2600 50  0001 C CNN
+F 3 "~" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J43
+U 1 1 5C06A02E
+P 5200 2700
+F 0 "J43" H 5275 2725 39  0000 L CNN
+F 1 "A11" H 5275 2675 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 2700 50  0001 C CNN
+F 3 "~" H 5200 2700 50  0001 C CNN
+	1    5200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J44
+U 1 1 5C06A034
+P 5200 2800
+F 0 "J44" H 5275 2825 39  0000 L CNN
+F 1 "A12" H 5275 2775 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J77
+U 1 1 5C06A03A
+P 5400 2900
+F 0 "J77" H 5475 2925 39  0000 L CNN
+F 1 "SWD" H 5475 2875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5400 2900 50  0001 C CNN
+F 3 "~" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J78
+U 1 1 5C06A040
+P 5400 3000
+F 0 "J78" H 5475 3025 39  0000 L CNN
+F 1 "SWC" H 5475 2975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5400 3000 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J51
+U 1 1 5C06A052
+P 5200 3900
+F 0 "J51" H 5275 3925 39  0000 L CNN
+F 1 "B6" H 5275 3875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 3900 50  0001 C CNN
+F 3 "~" H 5200 3900 50  0001 C CNN
+	1    5200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J52
+U 1 1 5C07A232
+P 5200 4000
+F 0 "J52" H 5275 4025 39  0000 L CNN
+F 1 "B7" H 5275 3975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4000 50  0001 C CNN
+F 3 "~" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J53
+U 1 1 5C07A238
+P 5200 4100
+F 0 "J53" H 5275 4125 39  0000 L CNN
+F 1 "B8" H 5275 4075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4100 50  0001 C CNN
+F 3 "~" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J79
+U 1 1 5C07A23E
+P 5400 3600
+F 0 "J79" H 5475 3625 39  0000 L CNN
+F 1 "SWO" H 5475 3575 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5400 3600 50  0001 C CNN
+F 3 "~" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J55
+U 1 1 5C07A244
+P 5200 4300
+F 0 "J55" H 5275 4325 39  0000 L CNN
+F 1 "B10" H 5275 4275 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4300 50  0001 C CNN
+F 3 "~" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J56
+U 1 1 5C07A24A
+P 5200 4400
+F 0 "J56" H 5275 4425 39  0000 L CNN
+F 1 "B11" H 5275 4375 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4400 50  0001 C CNN
+F 3 "~" H 5200 4400 50  0001 C CNN
+	1    5200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J57
+U 1 1 5C07A250
+P 5200 4500
+F 0 "J57" H 5275 4525 39  0000 L CNN
+F 1 "B12" H 5275 4475 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4500 50  0001 C CNN
+F 3 "~" H 5200 4500 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J58
+U 1 1 5C07A256
+P 5200 4600
+F 0 "J58" H 5275 4625 39  0000 L CNN
+F 1 "B13" H 5275 4575 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4600 50  0001 C CNN
+F 3 "~" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J59
+U 1 1 5C07A25C
+P 5200 4700
+F 0 "J59" H 5275 4725 39  0000 L CNN
+F 1 "B14" H 5275 4675 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4700 50  0001 C CNN
+F 3 "~" H 5200 4700 50  0001 C CNN
+	1    5200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J60
+U 1 1 5C07A262
+P 5200 4800
+F 0 "J60" H 5275 4825 39  0000 L CNN
+F 1 "B15" H 5275 4775 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4800 50  0001 C CNN
+F 3 "~" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J49
+U 1 1 5C08A8AA
+P 5200 3700
+F 0 "J49" H 5275 3725 39  0000 L CNN
+F 1 "B4" H 5275 3675 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 3700 50  0001 C CNN
+F 3 "~" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+Text Label 1300 3800 2    50   ~ 0
+BCK
+Text Label 1300 4300 2    50   ~ 0
+ADCDATA
+Text Label 1300 3300 2    50   ~ 0
+DACDATA
+Text Label 1300 3700 2    50   ~ 0
+LRCK
+Wire Wire Line
+	9500 1900 9400 1900
+Wire Wire Line
+	9500 2000 9400 2000
+$Comp
+L Device:C_Small C12
+U 1 1 5C1D7942
+P 7400 4700
+F 0 "C12" H 7492 4746 50  0000 L CNN
+F 1 "10u" H 7492 4655 50  0000 L CNN
+F 2 "myFoot:my_C_3216(1206)_HandSoldering" H 7400 4700 50  0001 C CNN
+F 3 "~" H 7400 4700 50  0001 C CNN
+	1    7400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR030
+U 1 1 5C1D7CB0
+P 7400 4800
+F 0 "#PWR030" H 7400 4550 50  0001 C CNN
+F 1 "GNDD" H 7404 4645 50  0000 C CNN
+F 2 "" H 7400 4800 50  0001 C CNN
+F 3 "" H 7400 4800 50  0001 C CNN
+	1    7400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4500 7400 4500
+Wire Wire Line
+	7400 4500 7400 4600
+$Comp
+L Device:C_Small C17
+U 1 1 5C222BFB
+P 9400 4700
+F 0 "C17" H 9492 4746 50  0000 L CNN
+F 1 "100n" H 9492 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 9400 4700 50  0001 C CNN
+F 3 "~" H 9400 4700 50  0001 C CNN
+	1    9400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR038
+U 1 1 5C222C01
+P 9400 4800
+F 0 "#PWR038" H 9400 4550 50  0001 C CNN
+F 1 "GNDD" H 9404 4645 50  0000 C CNN
+F 2 "" H 9400 4800 50  0001 C CNN
+F 3 "" H 9400 4800 50  0001 C CNN
+	1    9400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4600 9400 4500
+Wire Wire Line
+	9400 4500 9000 4500
+Connection ~ 9000 4500
+$Comp
+L power:GNDA #PWR024
+U 1 1 5C36E006
+P 6600 6700
+F 0 "#PWR024" H 6600 6450 50  0001 C CNN
+F 1 "GNDA" H 6605 6527 50  0000 C CNN
+F 2 "" H 6600 6700 50  0001 C CNN
+F 3 "" H 6600 6700 50  0001 C CNN
+	1    6600 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C36E7A2
+P 6600 6700
+F 0 "#FLG02" H 6600 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6600 6874 50  0001 C CNN
+F 2 "" H 6600 6700 50  0001 C CNN
+F 3 "~" H 6600 6700 50  0001 C CNN
+	1    6600 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J32
+U 1 1 5C0F213B
+P 5200 1600
+F 0 "J32" H 5275 1625 39  0000 L CNN
+F 1 "A0" H 5275 1575 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 1600 50  0001 C CNN
+F 3 "~" H 5200 1600 50  0001 C CNN
+	1    5200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J88
+U 1 1 5C200A39
+P 9600 4100
+F 0 "J88" H 9675 4125 39  0000 L CNN
+F 1 "DGND" H 9675 4075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9600 4100 50  0001 C CNN
+F 3 "~" H 9600 4100 50  0001 C CNN
+	1    9600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U3
+U 1 1 5C27EF03
+P 7000 4500
+F 0 "U3" H 7000 4742 50  0000 C CNN
+F 1 "NJM2845DL1-33" H 7000 4651 50  0000 C CNN
+F 2 "myFoot:my_TO-252-3" H 7025 4350 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7000 4450 50  0001 C CNN
+	1    7000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4500 7800 4500
+Connection ~ 7400 4500
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5C06B55E
+P 2800 1600
+F 0 "J3" H 2875 1625 39  0000 L CNN
+F 1 "NRST" H 2875 1575 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 2800 1600 50  0001 C CNN
+F 3 "~" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5C091CC4
+P 7800 2100
+F 0 "R1" H 7859 2146 50  0000 L CNN
+F 1 "47k" H 7859 2055 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 7800 2100 50  0001 C CNN
+F 3 "~" H 7800 2100 50  0001 C CNN
+	1    7800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR05
+U 1 1 5C091E34
+P 7800 2200
+F 0 "#PWR05" H 7800 1950 50  0001 C CNN
+F 1 "GNDD" H 7804 2045 50  0000 C CNN
+F 2 "" H 7800 2200 50  0001 C CNN
+F 3 "" H 7800 2200 50  0001 C CNN
+	1    7800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1900 8100 2200
+Wire Wire Line
+	8100 2200 8400 2200
+Wire Wire Line
+	7700 1900 7800 1900
+Wire Wire Line
+	7800 2000 7800 1900
+Connection ~ 7800 1900
+Wire Wire Line
+	7800 1900 8100 1900
+$Comp
+L Device:C_Small C3
+U 1 1 5C0D1E13
+P 9900 1800
+F 0 "C3" H 9992 1846 50  0000 L CNN
+F 1 "10u" H 9992 1755 50  0000 L CNN
+F 2 "myFoot:my_C_3216(1206)_HandSoldering" H 9900 1800 50  0001 C CNN
+F 3 "~" H 9900 1800 50  0001 C CNN
+	1    9900 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1700 9900 1600
+Connection ~ 9900 1600
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C0F99F2
+P 1400 3300
+F 0 "TP1" H 1400 3575 50  0000 C CNN
+F 1 "LRCK" H 1400 3500 50  0000 C CNN
+F 2 "myFoot:my_TestPoint_1.2mm" H 1600 3300 50  0001 C CNN
+F 3 "~" H 1600 3300 50  0001 C CNN
+	1    1400 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C110D5E
+P 1400 3700
+F 0 "TP2" H 1400 3975 50  0000 C CNN
+F 1 "BCK" H 1400 3900 50  0000 C CNN
+F 2 "myFoot:my_TestPoint_1.2mm" H 1600 3700 50  0001 C CNN
+F 3 "~" H 1600 3700 50  0001 C CNN
+	1    1400 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C110ED2
+P 1400 3900
+F 0 "TP3" H 1400 4175 50  0000 C CNN
+F 1 "ADC" H 1400 4100 50  0000 C CNN
+F 2 "myFoot:my_TestPoint_1.2mm" H 1600 3900 50  0001 C CNN
+F 3 "~" H 1600 3900 50  0001 C CNN
+	1    1400 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C13BCC6
+P 1400 4300
+F 0 "TP4" H 1400 4575 50  0000 C CNN
+F 1 "DAC" H 1400 4500 50  0000 C CNN
+F 2 "myFoot:my_TestPoint_1.2mm" H 1600 4300 50  0001 C CNN
+F 3 "~" H 1600 4300 50  0001 C CNN
+	1    1400 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1300 4300 1400 4300
+Wire Wire Line
+	1300 3800 1400 3800
+Wire Wire Line
+	1400 3900 1400 3800
+Wire Wire Line
+	1300 3300 1400 3300
+Wire Wire Line
+	1400 3700 1300 3700
+$Comp
+L Connector_Generic:Conn_01x01 J80
+U 1 1 5C1E1C2A
+P 8500 4000
+F 0 "J80" H 8575 4025 39  0000 L CNN
+F 1 "+5VD" H 8575 3975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 8500 4000 50  0001 C CNN
+F 3 "~" H 8500 4000 50  0001 C CNN
+	1    8500 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 7200 6000 0    118  ~ 0
+Owm Board H7D  Rev.A\nDecember 2019\ndrugscore.blog.fc2.com
+Text Label 10000 1600 0    50   ~ 0
+RSTN
+Wire Wire Line
+	9900 1600 10000 1600
+Text Label 2800 3500 2    50   ~ 0
+RSTN
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 5C068C23
+P 3000 4800
+F 0 "J15" H 3075 4825 39  0000 L CNN
+F 1 "E15" H 3075 4775 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4800 50  0001 C CNN
+F 3 "~" H 3000 4800 50  0001 C CNN
+	1    3000 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 3300 1400 3300
+Connection ~ 1400 3300
+Text Label 6400 1600 0    50   ~ 0
+RADC-
+Text Label 6400 1700 0    50   ~ 0
+RADC+
+Text Label 6400 1800 0    50   ~ 0
+LADC-
+Text Label 6400 1900 0    50   ~ 0
+LADC+
+Wire Wire Line
+	6200 1900 6400 1900
+Wire Wire Line
+	6200 1600 6400 1600
+Wire Wire Line
+	6200 1700 6400 1700
+Wire Wire Line
+	6200 1800 6400 1800
+Text Label 6400 2200 0    50   ~ 0
+LDAC+
+Wire Wire Line
+	6200 2000 6400 2000
+Wire Wire Line
+	6200 2100 6400 2100
+Wire Wire Line
+	6200 2300 6400 2300
+Wire Wire Line
+	6200 2200 6400 2200
+$Comp
+L power:GNDD #PWR028
+U 1 1 5DC58E21
+P 6500 4800
+F 0 "#PWR028" H 6500 4550 50  0001 C CNN
+F 1 "GNDD" H 6504 4645 50  0000 C CNN
+F 2 "" H 6500 4800 50  0001 C CNN
+F 3 "" H 6500 4800 50  0001 C CNN
+	1    6500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4500 6100 4500
+Connection ~ 6500 4500
+Connection ~ 6100 4500
+Wire Wire Line
+	6100 4500 6100 4400
+$Comp
+L power:+3.3V #PWR09
+U 1 1 5DC81E24
+P 8800 1200
+F 0 "#PWR09" H 8800 1050 50  0001 C CNN
+F 1 "+3.3V" H 8800 1350 50  0000 C CNN
+F 2 "" H 8800 1200 50  0001 C CNN
+F 3 "" H 8800 1200 50  0001 C CNN
+	1    8800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR040
+U 1 1 5DA4E3B6
+P 9400 4200
+F 0 "#PWR040" H 9400 3950 50  0001 C CNN
+F 1 "GNDD" H 9404 4045 50  0000 C CNN
+F 2 "" H 9400 4200 50  0001 C CNN
+F 3 "" H 9400 4200 50  0001 C CNN
+	1    9400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J1
+U 1 1 5DAABF1F
+P 6000 1900
+F 0 "J1" H 5918 1075 50  0000 C CNN
+F 1 "Conn_01x12" H 5918 1166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 6000 1900 50  0001 C CNN
+F 3 "~" H 6000 1900 50  0001 C CNN
+	1    6000 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR01
+U 1 1 5DAACEB7
+P 6600 2600
+F 0 "#PWR01" H 6600 2350 50  0001 C CNN
+F 1 "GNDD" H 6604 2445 50  0000 C CNN
+F 2 "" H 6600 2600 50  0001 C CNN
+F 3 "" H 6600 2600 50  0001 C CNN
+	1    6600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR02
+U 1 1 5DAADBEA
+P 6800 1500
+F 0 "#PWR02" H 6800 1250 50  0001 C CNN
+F 1 "GNDA" H 6805 1327 50  0000 C CNN
+F 2 "" H 6800 1500 50  0001 C CNN
+F 3 "" H 6800 1500 50  0001 C CNN
+	1    6800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR03
+U 1 1 5DAAF0BE
+P 6800 2300
+F 0 "#PWR03" H 6800 2150 50  0001 C CNN
+F 1 "+5VD" H 6815 2473 50  0000 C CNN
+F 2 "" H 6800 2300 50  0001 C CNN
+F 3 "" H 6800 2300 50  0001 C CNN
+	1    6800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1500 6600 1500
+Wire Wire Line
+	6200 1400 6800 1400
+Wire Wire Line
+	6200 2400 6800 2400
+Wire Wire Line
+	6800 2400 6800 2300
+Wire Wire Line
+	6200 2500 6600 2500
+Wire Wire Line
+	6600 2500 6600 2600
+Wire Wire Line
+	3800 1300 3800 1100
+Wire Wire Line
+	3800 1100 3900 1100
+Wire Wire Line
+	3100 1100 3800 1100
+Connection ~ 3800 1100
+Wire Wire Line
+	3100 1400 3100 1600
+Wire Wire Line
+	3000 1600 3100 1600
+Connection ~ 3100 1600
+$Comp
+L MCU_ST_STM32H7:STM32H753VITx U2
+U 1 1 5DC1614B
+P 4100 4000
+F 0 "U2" H 4100 3500 50  0000 C CNN
+F 1 "STM32H753VITx" H 4100 3400 50  0000 C CNN
+F 2 "myFoot:my_LQFP-100_14x14mm_P0.5mm" H 3400 1400 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00388325.pdf" H 4100 4000 50  0001 C CNN
+	1    4100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR018
+U 1 1 5DC318C5
+P 3000 2400
+F 0 "#PWR018" H 3000 2250 50  0001 C CNN
+F 1 "+3.3V" H 3015 2573 50  0000 C CNN
+F 2 "" H 3000 2400 50  0001 C CNN
+F 3 "" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5DC32478
+P 3000 2600
+F 0 "C8" H 3092 2646 50  0000 L CNN
+F 1 "100n" H 3092 2555 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 3000 2600 50  0001 C CNN
+F 3 "~" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR019
+U 1 1 5DC32482
+P 3000 2700
+F 0 "#PWR019" H 3000 2450 50  0001 C CNN
+F 1 "GNDD" H 3004 2545 50  0000 C CNN
+F 2 "" H 3000 2700 50  0001 C CNN
+F 3 "" H 3000 2700 50  0001 C CNN
+	1    3000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2500 3000 2400
+Wire Wire Line
+	3200 2200 3200 2400
+Wire Wire Line
+	3200 2400 3000 2400
+Connection ~ 3000 2400
+Wire Wire Line
+	2600 2100 3200 2100
+Wire Wire Line
+	2300 2000 3200 2000
+Wire Wire Line
+	2000 1800 3200 1800
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5DC5DE3C
+P 1800 1800
+F 0 "J2" H 1875 1825 39  0000 L CNN
+F 1 "BOOT0" H 1875 1775 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 1800 1800 50  0001 C CNN
+F 3 "~" H 1800 1800 50  0001 C CNN
+	1    1800 1800
+	-1   0    0    1   
+$EndComp
+Connection ~ 2000 1800
+Wire Wire Line
+	4100 6800 4100 6900
+Wire Wire Line
+	4100 6900 4200 6900
+Connection ~ 4200 6900
+Wire Wire Line
+	4100 6900 4000 6900
+Wire Wire Line
+	4000 6900 4000 6800
+Connection ~ 4100 6900
+Wire Wire Line
+	3900 6800 3900 6900
+Wire Wire Line
+	3900 6900 4000 6900
+Connection ~ 4000 6900
+Wire Wire Line
+	3800 6800 3800 6900
+Wire Wire Line
+	3800 6900 3900 6900
+Connection ~ 3900 6900
+Wire Wire Line
+	3200 3100 2700 3100
+Wire Wire Line
+	2700 3100 2700 3400
+Wire Wire Line
+	2500 2800 2700 2800
+Wire Wire Line
+	2700 2800 2700 3000
+Wire Wire Line
+	2700 3000 3200 3000
+Connection ~ 2500 2800
+Wire Wire Line
+	3200 3600 1600 3600
+Wire Wire Line
+	1400 3700 3200 3700
+Connection ~ 1400 3700
+Wire Wire Line
+	3200 3800 1400 3800
+Connection ~ 1400 3800
+Wire Wire Line
+	1600 3900 1600 4300
+Wire Wire Line
+	1600 4300 1400 4300
+Wire Wire Line
+	1600 3900 3200 3900
+Connection ~ 1400 4300
+Wire Wire Line
+	1600 3600 1600 3300
+Wire Wire Line
+	5000 2900 5200 2900
+Wire Wire Line
+	5200 3000 5000 3000
+Wire Wire Line
+	5200 3600 5000 3600
+Wire Wire Line
+	6800 1500 6800 1400
+$Comp
+L Device:C_Small C18
+U 1 1 5DBF1156
+P 9800 4700
+F 0 "C18" H 9892 4746 50  0000 L CNN
+F 1 "100n" H 9892 4655 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 9800 4700 50  0001 C CNN
+F 3 "~" H 9800 4700 50  0001 C CNN
+	1    9800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR039
+U 1 1 5DBF1160
+P 9800 4800
+F 0 "#PWR039" H 9800 4550 50  0001 C CNN
+F 1 "GNDD" H 9804 4645 50  0000 C CNN
+F 2 "" H 9800 4800 50  0001 C CNN
+F 3 "" H 9800 4800 50  0001 C CNN
+	1    9800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4600 9800 4500
+Wire Wire Line
+	9800 4500 9400 4500
+Connection ~ 9400 4500
+$Comp
+L Connector_Generic:Conn_01x01 J83
+U 1 1 5DC23667
+P 9000 4100
+F 0 "J83" H 9075 4125 39  0000 L CNN
+F 1 "+3.3V" H 9075 4075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9000 4100 50  0001 C CNN
+F 3 "~" H 9000 4100 50  0001 C CNN
+	1    9000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J82
+U 1 1 5DC23B90
+P 9000 4000
+F 0 "J82" H 9075 4025 39  0000 L CNN
+F 1 "+3,3V" H 9075 3975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9000 4000 50  0001 C CNN
+F 3 "~" H 9000 4000 50  0001 C CNN
+	1    9000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J81
+U 1 1 5DC23F44
+P 9000 3900
+F 0 "J81" H 9075 3925 39  0000 L CNN
+F 1 "+3.3V" H 9075 3875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9000 3900 50  0001 C CNN
+F 3 "~" H 9000 3900 50  0001 C CNN
+	1    9000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3900 8800 4000
+Wire Wire Line
+	8800 4000 8800 4100
+Connection ~ 8800 4000
+Wire Wire Line
+	4300 1100 4400 1100
+Wire Wire Line
+	4400 1100 4400 1300
+$Comp
+L Connector_Generic:Conn_01x01 J87
+U 1 1 5DC412AD
+P 9600 4000
+F 0 "J87" H 9675 4025 39  0000 L CNN
+F 1 "DGND" H 9675 3975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9600 4000 50  0001 C CNN
+F 3 "~" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J86
+U 1 1 5DC413FF
+P 9600 3900
+F 0 "J86" H 9675 3925 39  0000 L CNN
+F 1 "DGND" H 9675 3875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9600 3900 50  0001 C CNN
+F 3 "~" H 9600 3900 50  0001 C CNN
+	1    9600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR035
+U 1 1 5DC49635
+P 8300 3800
+F 0 "#PWR035" H 8300 3650 50  0001 C CNN
+F 1 "+5VD" H 8315 3973 50  0000 C CNN
+F 2 "" H 8300 3800 50  0001 C CNN
+F 3 "" H 8300 3800 50  0001 C CNN
+	1    8300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR037
+U 1 1 5DC49A93
+P 8800 3800
+F 0 "#PWR037" H 8800 3650 50  0001 C CNN
+F 1 "+3.3V" H 8815 3973 50  0000 C CNN
+F 2 "" H 8800 3800 50  0001 C CNN
+F 3 "" H 8800 3800 50  0001 C CNN
+	1    8800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3800 8300 4000
+Wire Wire Line
+	8800 3800 8800 3900
+Connection ~ 8800 3900
+Wire Wire Line
+	9400 3900 9400 4000
+Wire Wire Line
+	9400 4000 9400 4100
+Connection ~ 9400 4000
+Wire Wire Line
+	9400 4200 9400 4100
+Connection ~ 9400 4100
+$Comp
+L Connector_Generic:Conn_01x01 J40
+U 1 1 5DC7F00D
+P 5200 2400
+F 0 "J40" H 5275 2425 39  0000 L CNN
+F 1 "A8" H 5275 2375 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 2400 50  0001 C CNN
+F 3 "~" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J45
+U 1 1 5DC7F1F3
+P 5200 3100
+F 0 "J45" H 5275 3125 39  0000 L CNN
+F 1 "A15" H 5275 3075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 3100 50  0001 C CNN
+F 3 "~" H 5200 3100 50  0001 C CNN
+	1    5200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J46
+U 1 1 5DC7F41A
+P 5200 3300
+F 0 "J46" H 5275 3325 39  0000 L CNN
+F 1 "B0" H 5275 3275 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 3300 50  0001 C CNN
+F 3 "~" H 5200 3300 50  0001 C CNN
+	1    5200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J47
+U 1 1 5DC7F63C
+P 5200 3400
+F 0 "J47" H 5275 3425 39  0000 L CNN
+F 1 "B1" H 5275 3375 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 3400 50  0001 C CNN
+F 3 "~" H 5200 3400 50  0001 C CNN
+	1    5200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J48
+U 1 1 5DC7F81B
+P 5200 3500
+F 0 "J48" H 5275 3525 39  0000 L CNN
+F 1 "B2" H 5275 3475 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 3500 50  0001 C CNN
+F 3 "~" H 5200 3500 50  0001 C CNN
+	1    5200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J50
+U 1 1 5DC8A5DC
+P 5200 3800
+F 0 "J50" H 5275 3825 39  0000 L CNN
+F 1 "B5" H 5275 3775 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 3800 50  0001 C CNN
+F 3 "~" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J54
+U 1 1 5DC8A80E
+P 5200 4200
+F 0 "J54" H 5275 4225 39  0000 L CNN
+F 1 "B9" H 5275 4175 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 4200 50  0001 C CNN
+F 3 "~" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J65
+U 1 1 5DC8B9D6
+P 5200 5400
+F 0 "J65" H 5275 5425 39  0000 L CNN
+F 1 "C4" H 5275 5375 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 5400 50  0001 C CNN
+F 3 "~" H 5200 5400 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J66
+U 1 1 5DC8B9E0
+P 5200 5500
+F 0 "J66" H 5275 5525 39  0000 L CNN
+F 1 "C5" H 5275 5475 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 5500 50  0001 C CNN
+F 3 "~" H 5200 5500 50  0001 C CNN
+	1    5200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J68
+U 1 1 5DC8B9EA
+P 5200 5700
+F 0 "J68" H 5275 5725 39  0000 L CNN
+F 1 "C7" H 5275 5675 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 5700 50  0001 C CNN
+F 3 "~" H 5200 5700 50  0001 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J69
+U 1 1 5DC8B9F4
+P 5200 5800
+F 0 "J69" H 5275 5825 39  0000 L CNN
+F 1 "C8" H 5275 5775 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 5800 50  0001 C CNN
+F 3 "~" H 5200 5800 50  0001 C CNN
+	1    5200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J70
+U 1 1 5DC8B9FE
+P 5200 5900
+F 0 "J70" H 5275 5925 39  0000 L CNN
+F 1 "C9" H 5275 5875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 5900 50  0001 C CNN
+F 3 "~" H 5200 5900 50  0001 C CNN
+	1    5200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J71
+U 1 1 5DC8BA08
+P 5200 6000
+F 0 "J71" H 5275 6025 39  0000 L CNN
+F 1 "C10" H 5275 5975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 6000 50  0001 C CNN
+F 3 "~" H 5200 6000 50  0001 C CNN
+	1    5200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J72
+U 1 1 5DC8BA12
+P 5200 6100
+F 0 "J72" H 5275 6125 39  0000 L CNN
+F 1 "C11" H 5275 6075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 6100 50  0001 C CNN
+F 3 "~" H 5200 6100 50  0001 C CNN
+	1    5200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J73
+U 1 1 5DC8BA1C
+P 5200 6200
+F 0 "J73" H 5275 6225 39  0000 L CNN
+F 1 "C12" H 5275 6175 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 5200 6200 50  0001 C CNN
+F 3 "~" H 5200 6200 50  0001 C CNN
+	1    5200 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J67
+U 1 1 5DC8BA3A
+P 5200 5600
+F 0 "J67" H 5275 5625 39  0000 L CNN
+F 1 "C6" H 5275 5575 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 5200 5600 50  0001 C CNN
+F 3 "~" H 5200 5600 50  0001 C CNN
+	1    5200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5DCA185B
+P 3000 4000
+F 0 "J7" H 3075 4025 39  0000 L CNN
+F 1 "E7" H 3075 3975 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 4000 50  0001 C CNN
+F 3 "~" H 3000 4000 50  0001 C CNN
+	1    3000 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5DCA1D5E
+P 3000 3400
+F 0 "J5" H 3075 3425 39  0000 L CNN
+F 1 "E1" H 3075 3375 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 3400 50  0001 C CNN
+F 3 "~" H 3000 3400 50  0001 C CNN
+	1    3000 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5DCA1F4C
+P 3000 3300
+F 0 "J4" H 3075 3325 39  0000 L CNN
+F 1 "E0" H 3075 3275 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 3300 50  0001 C CNN
+F 3 "~" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J16
+U 1 1 5DCA20ED
+P 3000 5000
+F 0 "J16" H 3075 5025 39  0000 L CNN
+F 1 "D0" H 3075 4975 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5000 50  0001 C CNN
+F 3 "~" H 3000 5000 50  0001 C CNN
+	1    3000 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J19
+U 1 1 5DCA4794
+P 3000 5300
+F 0 "J19" H 3075 5325 39  0000 L CNN
+F 1 "D3" H 3075 5275 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5300 50  0001 C CNN
+F 3 "~" H 3000 5300 50  0001 C CNN
+	1    3000 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J20
+U 1 1 5DCA479E
+P 3000 5400
+F 0 "J20" H 3075 5425 39  0000 L CNN
+F 1 "D4" H 3075 5375 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5400 50  0001 C CNN
+F 3 "~" H 3000 5400 50  0001 C CNN
+	1    3000 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J21
+U 1 1 5DCA47A8
+P 3000 5500
+F 0 "J21" H 3075 5525 39  0000 L CNN
+F 1 "D5" H 3075 5475 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5500 50  0001 C CNN
+F 3 "~" H 3000 5500 50  0001 C CNN
+	1    3000 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J22
+U 1 1 5DCA47B2
+P 3000 5600
+F 0 "J22" H 3075 5625 39  0000 L CNN
+F 1 "D6" H 3075 5575 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5600 50  0001 C CNN
+F 3 "~" H 3000 5600 50  0001 C CNN
+	1    3000 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J23
+U 1 1 5DCA47BC
+P 3000 5700
+F 0 "J23" H 3075 5725 39  0000 L CNN
+F 1 "D7" H 3075 5675 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5700 50  0001 C CNN
+F 3 "~" H 3000 5700 50  0001 C CNN
+	1    3000 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J24
+U 1 1 5DCA47C6
+P 3000 5800
+F 0 "J24" H 3075 5825 39  0000 L CNN
+F 1 "D8" H 3075 5775 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 5800 50  0001 C CNN
+F 3 "~" H 3000 5800 50  0001 C CNN
+	1    3000 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J25
+U 1 1 5DCA47D0
+P 3000 5900
+F 0 "J25" H 3075 5925 39  0000 L CNN
+F 1 "D9" H 3075 5875 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 5900 50  0001 C CNN
+F 3 "~" H 3000 5900 50  0001 C CNN
+	1    3000 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J26
+U 1 1 5DCA47DA
+P 3000 6000
+F 0 "J26" H 3075 6025 39  0000 L CNN
+F 1 "D10" H 3075 5975 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 6000 50  0001 C CNN
+F 3 "~" H 3000 6000 50  0001 C CNN
+	1    3000 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J18
+U 1 1 5DCA47E4
+P 3000 5200
+F 0 "J18" H 3075 5225 39  0000 L CNN
+F 1 "D2" H 3075 5175 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 5200 50  0001 C CNN
+F 3 "~" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J27
+U 1 1 5DCAECC8
+P 3000 6100
+F 0 "J27" H 3075 6125 39  0000 L CNN
+F 1 "D11" H 3075 6075 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 6100 50  0001 C CNN
+F 3 "~" H 3000 6100 50  0001 C CNN
+	1    3000 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J28
+U 1 1 5DCAECD2
+P 3000 6200
+F 0 "J28" H 3075 6225 39  0000 L CNN
+F 1 "D12" H 3075 6175 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 3000 6200 50  0001 C CNN
+F 3 "~" H 3000 6200 50  0001 C CNN
+	1    3000 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J29
+U 1 1 5DCAECDC
+P 3000 6300
+F 0 "J29" H 3075 6325 39  0000 L CNN
+F 1 "D13" H 3075 6275 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 6300 50  0001 C CNN
+F 3 "~" H 3000 6300 50  0001 C CNN
+	1    3000 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J30
+U 1 1 5DCAECE6
+P 3000 6400
+F 0 "J30" H 3075 6425 39  0000 L CNN
+F 1 "D14" H 3075 6375 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 6400 50  0001 C CNN
+F 3 "~" H 3000 6400 50  0001 C CNN
+	1    3000 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J31
+U 1 1 5DCAECF0
+P 3000 6500
+F 0 "J31" H 3075 6525 39  0000 L CNN
+F 1 "D15" H 3075 6475 39  0000 L CNN
+F 2 "myFoot:my_SmallestPad_0-6mmDrill" H 3000 6500 50  0001 C CNN
+F 3 "~" H 3000 6500 50  0001 C CNN
+	1    3000 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J84
+U 1 1 5DD5D91D
+P 9000 4200
+F 0 "J84" H 9075 4225 39  0000 L CNN
+F 1 "+3.3V" H 9075 4175 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9000 4200 50  0001 C CNN
+F 3 "~" H 9000 4200 50  0001 C CNN
+	1    9000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J85
+U 1 1 5DD5DA89
+P 9600 3800
+F 0 "J85" H 9675 3825 39  0000 L CNN
+F 1 "DGND" H 9675 3775 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9600 3800 50  0001 C CNN
+F 3 "~" H 9600 3800 50  0001 C CNN
+	1    9600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3800 9400 3900
+Connection ~ 9400 3900
+Wire Wire Line
+	8800 4200 8800 4100
+Connection ~ 8800 4100
+$Comp
+L Device:C_Small C19
+U 1 1 5DBC2A59
+P 7000 1300
+F 0 "C19" H 7092 1346 50  0000 L CNN
+F 1 "100n" H 7092 1255 50  0000 L CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 7000 1300 50  0001 C CNN
+F 3 "~" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0101
+U 1 1 5DBC4510
+P 7000 1500
+F 0 "#PWR0101" H 7000 1250 50  0001 C CNN
+F 1 "GNDA" H 7005 1327 50  0000 C CNN
+F 2 "" H 7000 1500 50  0001 C CNN
+F 3 "" H 7000 1500 50  0001 C CNN
+	1    7000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1000 6600 1100
+Wire Wire Line
+	7000 1200 7000 1100
+Wire Wire Line
+	7000 1100 6600 1100
+Connection ~ 6600 1100
+Wire Wire Line
+	6600 1100 6600 1500
+Wire Wire Line
+	7000 1400 7000 1500
+Text Label 9200 1100 0    50   ~ 0
++5VA
+Wire Wire Line
+	9200 1100 9200 1200
+Text Label 6600 1000 0    50   ~ 0
++5VA
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5DCAA6F0
+P 9900 2500
+F 0 "#PWR0102" H 9900 2350 50  0001 C CNN
+F 1 "+3.3V" H 9915 2673 50  0000 C CNN
+F 2 "" H 9900 2500 50  0001 C CNN
+F 3 "" H 9900 2500 50  0001 C CNN
+	1    9900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5DCAAE8F
+P 8100 2600
+F 0 "#PWR0103" H 8100 2450 50  0001 C CNN
+F 1 "+3.3V" H 8115 2773 50  0000 C CNN
+F 2 "" H 8100 2600 50  0001 C CNN
+F 3 "" H 8100 2600 50  0001 C CNN
+	1    8100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3500 2800 3500
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5DE6AEEE
+P 9900 1200
+F 0 "#PWR0104" H 9900 1050 50  0001 C CNN
+F 1 "+3.3V" H 9915 1373 50  0000 C CNN
+F 2 "" H 9900 1200 50  0001 C CNN
+F 3 "" H 9900 1200 50  0001 C CNN
+	1    9900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR0105
+U 1 1 5DBE9163
+P 8600 1200
+F 0 "#PWR0105" H 8600 1050 50  0001 C CNN
+F 1 "+5VD" H 8550 1350 50  0000 C CNN
+F 2 "" H 8600 1200 50  0001 C CNN
+F 3 "" H 8600 1200 50  0001 C CNN
+	1    8600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5300 5500 5300
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5DC092D0
+P 9600 3700
+F 0 "J6" H 9675 3725 39  0000 L CNN
+F 1 "DGND" H 9675 3675 39  0000 L CNN
+F 2 "myFoot:my_SmallPad_0-8mmDrill" H 9600 3700 50  0001 C CNN
+F 3 "~" H 9600 3700 50  0001 C CNN
+	1    9600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3700 9400 3800
+Connection ~ 9400 3800
+NoConn ~ 5000 5000
+NoConn ~ 5000 5100
+NoConn ~ 5000 5200
+NoConn ~ 5000 6300
+NoConn ~ 5000 6400
+NoConn ~ 5000 6500
+$Comp
+L power:GNDA #PWR0106
+U 1 1 5DC16837
+P 6900 2600
+F 0 "#PWR0106" H 6900 2350 50  0001 C CNN
+F 1 "GNDA" H 6905 2427 50  0000 C CNN
+F 2 "" H 6900 2600 50  0001 C CNN
+F 3 "" H 6900 2600 50  0001 C CNN
+	1    6900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2500 6900 2500
+Wire Wire Line
+	6900 2500 6900 2600
+Connection ~ 6600 2500
+Connection ~ 8300 3200
+$Comp
+L power:GNDD #PWR07
+U 1 1 5C216C15
+P 8300 3200
+F 0 "#PWR07" H 8300 2950 50  0001 C CNN
+F 1 "GNDD" H 8304 3045 50  0000 C CNN
+F 2 "" H 8300 3200 50  0001 C CNN
+F 3 "" H 8300 3200 50  0001 C CNN
+	1    8300 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
