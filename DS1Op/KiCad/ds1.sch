@@ -1,0 +1,1784 @@
+EESchema Schematic File Version 4
+LIBS:ds1-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R3
+U 1 1 5CDF9C81
+P 3800 4200
+F 0 "R3" H 3859 4246 50  0000 L CNN
+F 1 "100k" H 3859 4155 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 3800 4200 50  0001 C CNN
+F 3 "" H 3800 4200 50  0001 C CNN
+	1    3800 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5CDFACEA
+P 2600 4300
+F 0 "R2" H 2659 4346 50  0000 L CNN
+F 1 "1M" H 2659 4255 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 2600 4300 50  0001 C CNN
+F 3 "" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CDFAE68
+P 2900 4300
+F 0 "#PWR03" H 2900 4050 50  0001 C CNN
+F 1 "GND" H 2905 4127 50  0000 C CNN
+F 2 "" H 2900 4300 50  0001 C CNN
+F 3 "" H 2900 4300 50  0001 C CNN
+	1    2900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5CDFC7B7
+P 2400 4100
+F 0 "C1" V 2225 4100 50  0000 C CNN
+F 1 "100n" V 2300 4100 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 2400 4100 50  0001 C CNN
+F 3 "" H 2400 4100 50  0001 C CNN
+	1    2400 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 4000 3800 4100
+Wire Wire Line
+	2600 4200 2600 4100
+Wire Wire Line
+	2600 4400 2600 4500
+Wire Wire Line
+	2600 4100 2500 4100
+Wire Wire Line
+	3700 4000 3800 4000
+$Comp
+L Device:LED_Small D7
+U 1 1 5CE1720B
+P 6400 6000
+F 0 "D7" V 6475 5825 50  0000 C CNN
+F 1 "LED" V 6400 5850 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" V 6400 6000 50  0001 C CNN
+F 3 "" V 6400 6000 50  0001 C CNN
+	1    6400 6000
+	0    1    -1   0   
+$EndComp
+Text Notes 5950 4800 0    75   ~ 0
+BOSS DS-1 Distortion (Op-Amp Buffered, JK Flip-Flop)\nJune 2020\ndrugscore.blog.fc2.com
+$Comp
+L Device:R_Small R1
+U 1 1 5EC4B1BE
+P 2100 4100
+F 0 "R1" V 1950 4025 50  0000 L CNN
+F 1 "1k" V 2025 4025 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+9V #PWR02
+U 1 1 5EC51A93
+P 2900 3700
+F 0 "#PWR02" H 2900 3550 50  0001 C CNN
+F 1 "+9V" H 2915 3873 50  0000 C CNN
+F 2 "" H 2900 3700 50  0001 C CNN
+F 3 "" H 2900 3700 50  0001 C CNN
+	1    2900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3900 2600 3900
+Wire Wire Line
+	2600 3900 2600 3400
+Wire Wire Line
+	2600 3400 3400 3400
+Wire Wire Line
+	3400 3400 3400 4000
+Wire Wire Line
+	3400 4000 3300 4000
+$Comp
+L Device:C_Small C2
+U 1 1 5EC578E2
+P 3600 4000
+F 0 "C2" V 3425 4000 50  0000 C CNN
+F 1 "470n" V 3500 4000 50  0000 C CNN
+F 2 "myFoot:my_C_Rect2_P5.00mm" H 3600 4000 50  0001 C CNN
+F 3 "MEB474J063D01" H 3600 4000 50  0001 C CNN
+	1    3600 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5EC76F02
+P 4600 4200
+F 0 "R4" H 4659 4246 50  0000 L CNN
+F 1 "1M" H 4659 4155 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 4600 4200 50  0001 C CNN
+F 3 "" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NJFET_SDG Q1
+U 1 1 5EC77FB3
+P 4300 4100
+F 0 "Q1" V 4628 4100 50  0000 C CNN
+F 1 "2SK208-GR" V 4537 4100 50  0000 C CNN
+F 2 "myFoot:my_SOT-23" H 4500 4200 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/toshiba/2SK208_datasheet_ja_20140301.pdf" H 4300 4100 50  0001 C CNN
+	1    4300 4100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5EC7853B
+P 4800 4000
+F 0 "C3" V 4625 4000 50  0000 C CNN
+F 1 "47n" V 4700 4000 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 4800 4000 50  0001 C CNN
+F 3 "" H 4800 4000 50  0001 C CNN
+	1    4800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5EC78C62
+P 5000 4200
+F 0 "R5" H 5059 4246 50  0000 L CNN
+F 1 "100k" H 5059 4155 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 5000 4200 50  0001 C CNN
+F 3 "" H 5000 4200 50  0001 C CNN
+	1    5000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5EC78FC6
+P 5200 3700
+F 0 "R6" V 5050 3625 50  0000 L CNN
+F 1 "470k" V 5125 3625 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 5200 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5EC79A1A
+P 5200 3400
+F 0 "C5" V 5025 3400 50  0000 C CNN
+F 1 "220p" V 5100 3400 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 5200 3400 50  0001 C CNN
+F 3 "" H 5200 3400 50  0001 C CNN
+	1    5200 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5EC79E53
+P 5400 4400
+F 0 "R8" H 5459 4446 50  0000 L CNN
+F 1 "22R" H 5459 4355 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 5400 4400 50  0001 C CNN
+F 3 "" H 5400 4400 50  0001 C CNN
+	1    5400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5EC7A0F3
+P 5400 2900
+F 0 "R7" H 5459 2946 50  0000 L CNN
+F 1 "10k" H 5459 2855 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 5400 2900 50  0001 C CNN
+F 3 "" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 5EC7C18E
+P 5300 4000
+F 0 "Q2" H 5475 3800 50  0000 L CNN
+F 1 "2SC3324-GR" H 5625 3800 50  0000 L CNN
+F 2 "myFoot:my_SOT-23" H 5500 4100 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/Toshiba/2SC3324.pdf" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4000 3400 4000
+Connection ~ 3400 4000
+Wire Wire Line
+	4500 4000 4600 4000
+Wire Wire Line
+	4600 4100 4600 4000
+Connection ~ 4600 4000
+Wire Wire Line
+	4600 4000 4700 4000
+Wire Wire Line
+	5000 4100 5000 4000
+Connection ~ 5000 4000
+Wire Wire Line
+	5100 4000 5000 4000
+Wire Wire Line
+	5100 3400 5000 3400
+Wire Wire Line
+	5300 3400 5400 3400
+Wire Wire Line
+	5400 3400 5400 3700
+Wire Wire Line
+	5400 3700 5300 3700
+Wire Wire Line
+	5400 3700 5400 3800
+Connection ~ 5400 3700
+Connection ~ 5400 3400
+Wire Wire Line
+	5400 4200 5400 4300
+$Comp
+L Device:C_Small C7
+U 1 1 5ECA24A9
+P 5600 3700
+F 0 "C7" V 5425 3700 50  0000 C CNN
+F 1 "47n" V 5500 3700 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 5600 3700 50  0001 C CNN
+F 3 "" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5ECA2B6A
+P 5600 3400
+F 0 "C6" V 5425 3400 50  0000 C CNN
+F 1 "22n" V 5500 3400 50  0000 C CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 5600 3400 50  0001 C CNN
+F 3 "" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3400 5400 3400
+Wire Wire Line
+	5400 3700 5500 3700
+$Comp
+L Device:R_Small R9
+U 1 1 5ECA6FD8
+P 5800 3900
+F 0 "R9" H 5859 3946 50  0000 L CNN
+F 1 "100k" H 5859 3855 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 5ECA7344
+P 6000 3400
+F 0 "R10" V 5850 3325 50  0000 L CNN
+F 1 "47k" V 5925 3325 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 6000 3400 50  0001 C CNN
+F 3 "" H 6000 3400 50  0001 C CNN
+	1    6000 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3400 5800 3400
+Wire Wire Line
+	5800 3400 5800 3700
+Wire Wire Line
+	5800 3700 5700 3700
+Wire Wire Line
+	5800 3800 5800 3700
+Connection ~ 5800 3700
+Wire Wire Line
+	6100 3400 6200 3400
+Wire Wire Line
+	6200 3400 6200 3500
+$Comp
+L power:+9V #PWR05
+U 1 1 5ECBAC6A
+P 5400 2800
+F 0 "#PWR05" H 5400 2650 50  0001 C CNN
+F 1 "+9V" H 5415 2973 50  0000 C CNN
+F 2 "" H 5400 2800 50  0001 C CNN
+F 3 "" H 5400 2800 50  0001 C CNN
+	1    5400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3400 6200 3400
+Connection ~ 6200 3400
+Wire Wire Line
+	6300 3200 6200 3200
+Wire Wire Line
+	6200 3200 6200 3000
+Wire Wire Line
+	7000 3000 7000 3300
+Wire Wire Line
+	7000 3300 6900 3300
+Connection ~ 7000 3300
+$Comp
+L Device:R_Small R11
+U 1 1 5ECC55FD
+P 7300 3000
+F 0 "R11" H 7359 3046 50  0000 L CNN
+F 1 "4.7k" H 7359 2955 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 7300 3000 50  0001 C CNN
+F 3 "" H 7300 3000 50  0001 C CNN
+	1    7300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 5ECC7438
+P 8600 3600
+F 0 "R13" V 8450 3525 50  0000 L CNN
+F 1 "2.2k" V 8525 3525 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 8600 3600 50  0001 C CNN
+F 3 "" H 8600 3600 50  0001 C CNN
+	1    8600 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5ECC7AFD
+P 8900 3600
+F 0 "C10" V 8725 3600 50  0000 C CNN
+F 1 "470n" V 8800 3600 50  0000 C CNN
+F 2 "myFoot:my_C_Rect2_P5.00mm" H 8900 3600 50  0001 C CNN
+F 3 "MEB474J063D01" H 8900 3600 50  0001 C CNN
+	1    8900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Small D3
+U 1 1 5ECC7E00
+P 8700 4000
+F 0 "D3" V 8725 4125 50  0000 C CNN
+F 1 "1N4148W" V 8800 4225 50  0000 C CNN
+F 2 "myFoot:my_D_SOD-123" V 8700 4000 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 8700 4000 50  0001 C CNN
+	1    8700 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5ECC9DE8
+P 10000 4400
+F 0 "R15" V 9850 4325 50  0000 L CNN
+F 1 "2.2k" V 9925 4325 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 10000 4400 50  0001 C CNN
+F 3 "" H 10000 4400 50  0001 C CNN
+	1    10000 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5ECCA2F3
+P 9700 4400
+F 0 "C12" V 9525 4400 50  0000 C CNN
+F 1 "22n" V 9600 4400 50  0000 C CNN
+F 2 "myFoot:my_C_2012(0805)_HandSoldering" H 9700 4400 50  0001 C CNN
+F 3 "" H 9700 4400 50  0001 C CNN
+	1    9700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 5ECCA6BC
+P 10300 4600
+F 0 "R16" H 10359 4646 50  0000 L CNN
+F 1 "6.8k" H 10359 4555 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 10300 4600 50  0001 C CNN
+F 3 "" H 10300 4600 50  0001 C CNN
+	1    10300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 5ECCAF35
+P 9700 3600
+F 0 "R14" V 9550 3525 50  0000 L CNN
+F 1 "6.8k" V 9625 3525 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 9700 3600 50  0001 C CNN
+F 3 "" H 9700 3600 50  0001 C CNN
+	1    9700 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5ECCB757
+P 10300 3900
+F 0 "RV2" H 10500 4100 50  0000 R CNN
+F 1 "20kB" H 10550 4025 50  0000 R CNN
+F 2 "myFoot:my_Pot_PTV09A-4" H 10300 3900 50  0001 C CNN
+F 3 "" H 10300 3900 50  0001 C CNN
+	1    10300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5EC4B74E
+P 9900 3800
+F 0 "C13" H 9800 3725 50  0000 C CNN
+F 1 "100n" H 9775 3875 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 9900 3800 50  0001 C CNN
+F 3 "" H 9900 3800 50  0001 C CNN
+	1    9900 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 5EC4CF84
+P 11900 4300
+F 0 "R18" H 11959 4346 50  0000 L CNN
+F 1 "1M" H 11959 4255 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 11900 4300 50  0001 C CNN
+F 3 "" H 11900 4300 50  0001 C CNN
+	1    11900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 5EC4E92A
+P 12300 4300
+F 0 "R19" H 12359 4346 50  0000 L CNN
+F 1 "1M" H 12359 4255 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 12300 4300 50  0001 C CNN
+F 3 "" H 12300 4300 50  0001 C CNN
+	1    12300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5EC4E93E
+P 12100 4100
+F 0 "C14" V 11925 4100 50  0000 C CNN
+F 1 "100n" V 12000 4100 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 12100 4100 50  0001 C CNN
+F 3 "" H 12100 4100 50  0001 C CNN
+	1    12100 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12300 4200 12300 4100
+Wire Wire Line
+	12300 4100 12200 4100
+Wire Wire Line
+	8300 3600 8400 3600
+$Comp
+L Device:D_Small D4
+U 1 1 5EC5CC36
+P 8900 4000
+F 0 "D4" V 8875 3900 50  0000 C CNN
+F 1 "1N4148W" V 8800 3800 50  0000 C CNN
+F 2 "myFoot:my_D_SOD-123" V 8900 4000 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 8900 4000 50  0001 C CNN
+	1    8900 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 3800 8700 3900
+Wire Wire Line
+	8800 3600 8700 3600
+$Comp
+L Device:C_Small C11
+U 1 1 5EC6524E
+P 9300 3800
+F 0 "C11" H 9400 3725 50  0000 C CNN
+F 1 "10n" H 9400 3875 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 9300 3800 50  0001 C CNN
+F 3 "" H 9300 3800 50  0001 C CNN
+	1    9300 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9300 3600 9300 3700
+Connection ~ 9300 3600
+Wire Wire Line
+	9300 3600 9500 3600
+Connection ~ 9500 3600
+Wire Wire Line
+	9500 3600 9600 3600
+Wire Wire Line
+	9900 3600 9900 3700
+Wire Wire Line
+	9900 3900 9900 4000
+Wire Wire Line
+	9800 3600 9900 3600
+Wire Wire Line
+	9500 4400 9600 4400
+Wire Wire Line
+	9500 3600 9500 4400
+Wire Wire Line
+	9800 4400 9900 4400
+Wire Wire Line
+	10450 3900 10700 3900
+$Comp
+L Device:R_Small R17
+U 1 1 5EC9FD8F
+P 11000 4100
+F 0 "R17" V 10850 4025 50  0000 L CNN
+F 1 "10k" V 10925 4025 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 11000 4100 50  0001 C CNN
+F 3 "" H 11000 4100 50  0001 C CNN
+	1    11000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 5ECAC1F8
+P 7600 3300
+F 0 "R12" H 7659 3346 50  0000 L CNN
+F 1 "100k" H 7659 3255 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 7600 3300 50  0001 C CNN
+F 3 "" H 7600 3300 50  0001 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+Text Label 2600 4500 2    50   ~ 0
+4.5V
+Text Label 3800 4400 2    50   ~ 0
+4.5V
+Wire Wire Line
+	3800 4400 3800 4300
+Wire Wire Line
+	4600 4300 4600 4400
+$Comp
+L power:GND #PWR06
+U 1 1 5ECB79E1
+P 5400 4500
+F 0 "#PWR06" H 5400 4250 50  0001 C CNN
+F 1 "GND" H 5405 4327 50  0000 C CNN
+F 2 "" H 5400 4500 50  0001 C CNN
+F 3 "" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+Text Label 4600 4400 2    50   ~ 0
+4.5V
+$Comp
+L Device:D_Small D2
+U 1 1 5ECB85B9
+P 6200 3600
+F 0 "D2" V 6200 3500 50  0000 C CNN
+F 1 "1N4148W" V 6300 3400 50  0000 C CNN
+F 2 "myFoot:my_D_SOD-123" V 6200 3600 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 6200 3600 50  0001 C CNN
+	1    6200 3600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8700 4100 8700 4200
+Wire Wire Line
+	8700 4200 8900 4200
+Wire Wire Line
+	8900 4200 8900 4100
+Wire Wire Line
+	9300 3900 9300 4000
+Wire Wire Line
+	10300 4700 10300 4800
+Wire Wire Line
+	10700 3950 10700 3900
+Wire Wire Line
+	10700 4250 10700 4500
+Wire Wire Line
+	10900 4100 10850 4100
+Text Label 10300 4800 2    50   ~ 0
+4.5V
+Text Label 10700 4500 2    50   ~ 0
+4.5V
+Text Label 11900 4500 2    50   ~ 0
+4.5V
+Text Label 12300 4500 2    50   ~ 0
+4.5V
+Wire Wire Line
+	11900 4200 11900 4100
+Connection ~ 11900 4100
+Wire Wire Line
+	11900 4100 12000 4100
+Wire Wire Line
+	11900 4400 11900 4500
+Wire Wire Line
+	12300 4400 12300 4500
+Wire Wire Line
+	12300 3900 12300 3700
+Text Label 9900 4000 2    50   ~ 0
+4.5V
+Wire Wire Line
+	7700 3500 7600 3500
+Wire Wire Line
+	7600 3500 7600 3400
+Wire Wire Line
+	7600 3200 7600 3100
+$Comp
+L Device:C_Small C9
+U 1 1 5ECC5A34
+P 8000 3100
+F 0 "C9" V 7825 3100 50  0000 C CNN
+F 1 "100p" V 7900 3100 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 8000 3100 50  0001 C CNN
+F 3 "" H 8000 3100 50  0001 C CNN
+	1    8000 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3100 7600 3100
+Wire Wire Line
+	8400 2800 8400 3100
+Wire Wire Line
+	7300 2900 7300 2800
+Wire Wire Line
+	7300 3100 7300 3200
+$Comp
+L power:GND #PWR07
+U 1 1 5ED16526
+P 7300 3400
+F 0 "#PWR07" H 7300 3150 50  0001 C CNN
+F 1 "GND" H 7305 3227 50  0000 C CNN
+F 2 "" H 7300 3400 50  0001 C CNN
+F 3 "" H 7300 3400 50  0001 C CNN
+	1    7300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5ED167FE
+P 7300 3300
+F 0 "C8" H 7375 3375 50  0000 C CNN
+F 1 "470n" H 7425 3225 50  0000 C CNN
+F 2 "myFoot:my_C_Rect2_P5.00mm" H 7300 3300 50  0001 C CNN
+F 3 "MEB474J063D01" H 7300 3300 50  0001 C CNN
+	1    7300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2800 7450 2800
+Wire Wire Line
+	7600 2950 7600 3100
+Connection ~ 7600 3100
+Wire Wire Line
+	7750 2800 8400 2800
+Wire Wire Line
+	8100 3100 8400 3100
+Connection ~ 8400 3100
+Wire Wire Line
+	8400 3100 8400 3600
+$Comp
+L power:GND #PWR04
+U 1 1 5ED514DC
+P 5000 4300
+F 0 "#PWR04" H 5000 4050 50  0001 C CNN
+F 1 "GND" H 5005 4127 50  0000 C CNN
+F 2 "" H 5000 4300 50  0001 C CNN
+F 3 "" H 5000 4300 50  0001 C CNN
+	1    5000 4300
+	1    0    0    -1  
+$EndComp
+Text Label 5800 4100 2    50   ~ 0
+4.5V
+Wire Wire Line
+	5800 4100 5800 4000
+Wire Wire Line
+	7000 3300 7000 3700
+Wire Wire Line
+	7000 3700 7700 3700
+Wire Wire Line
+	8500 3600 8400 3600
+Connection ~ 8400 3600
+Connection ~ 8900 4200
+Wire Wire Line
+	8900 4300 8900 4200
+Wire Wire Line
+	10100 4400 10300 4400
+Wire Wire Line
+	10300 4050 10300 4400
+Wire Wire Line
+	10300 4400 10300 4500
+Connection ~ 10300 4400
+Wire Wire Line
+	9900 3600 10300 3600
+Connection ~ 9900 3600
+Wire Wire Line
+	10300 3600 10300 3750
+Wire Wire Line
+	11400 4400 11400 4700
+Wire Wire Line
+	2200 4100 2300 4100
+Wire Wire Line
+	2700 4100 2600 4100
+Connection ~ 2600 4100
+Text Label 8900 4300 2    50   ~ 0
+4.5V
+Text Label 9300 4000 2    50   ~ 0
+4.5V
+Wire Wire Line
+	9000 3600 9100 3600
+Wire Wire Line
+	8700 3800 8900 3800
+Wire Wire Line
+	9100 3800 9100 3600
+Connection ~ 9100 3600
+Wire Wire Line
+	9100 3600 9300 3600
+Wire Wire Line
+	8900 3900 8900 3800
+Connection ~ 8900 3800
+Wire Wire Line
+	8900 3800 9100 3800
+$Comp
+L power:+9V #PWR024
+U 1 1 5EEF9838
+P 11700 5700
+F 0 "#PWR024" H 11700 5550 50  0001 C CNN
+F 1 "+9V" H 11715 5873 50  0000 C CNN
+F 2 "" H 11700 5700 50  0001 C CNN
+F 3 "" H 11700 5700 50  0001 C CNN
+	1    11700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C20
+U 1 1 5EEF9BC6
+P 12000 6000
+F 0 "C20" H 11900 6100 50  0000 C CNN
+F 1 "100u" H 11900 5925 50  0000 C CNN
+F 2 "myFoot:my_C_Elec_6.3" H 12000 6000 50  0001 C CNN
+F 3 "CS1C101M-CRE54" H 12000 6000 50  0001 C CNN
+	1    12000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5EEFA2B3
+P 11700 6000
+F 0 "D9" H 11700 5825 50  0000 C CNN
+F 1 "GS1010FL" H 11725 5900 50  0000 C CNN
+F 2 "myFoot:my_D_GS1010FL" V 11700 6000 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 11700 6000 50  0001 C CNN
+	1    11700 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R29
+U 1 1 5EEFA963
+P 13000 6000
+F 0 "R29" H 12800 6050 50  0000 L CNN
+F 1 "10k" H 12800 5950 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 13000 6000 50  0001 C CNN
+F 3 "" H 13000 6000 50  0001 C CNN
+	1    13000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 5700 11700 5800
+Wire Wire Line
+	12000 5800 12000 5900
+Connection ~ 11700 5800
+Wire Wire Line
+	11700 5800 11700 5900
+$Comp
+L power:GND #PWR025
+U 1 1 5EF20D48
+P 11700 6100
+F 0 "#PWR025" H 11700 5850 50  0001 C CNN
+F 1 "GND" H 11705 5927 50  0000 C CNN
+F 2 "" H 11700 6100 50  0001 C CNN
+F 3 "" H 11700 6100 50  0001 C CNN
+	1    11700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5EF20FA4
+P 13000 6100
+F 0 "#PWR030" H 13000 5850 50  0001 C CNN
+F 1 "GND" H 13005 5927 50  0000 C CNN
+F 2 "" H 13000 6100 50  0001 C CNN
+F 3 "" H 13000 6100 50  0001 C CNN
+	1    13000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5EF21162
+P 13300 6100
+F 0 "#PWR031" H 13300 5850 50  0001 C CNN
+F 1 "GND" H 13305 5927 50  0000 C CNN
+F 2 "" H 13300 6100 50  0001 C CNN
+F 3 "" H 13300 6100 50  0001 C CNN
+	1    13300 6100
+	1    0    0    -1  
+$EndComp
+Text Label 13300 5700 2    50   ~ 0
+4.5V
+$Comp
+L power:GND #PWR026
+U 1 1 5EF2B960
+P 12000 6100
+F 0 "#PWR026" H 12000 5850 50  0001 C CNN
+F 1 "GND" H 12005 5927 50  0000 C CNN
+F 2 "" H 12000 6100 50  0001 C CNN
+F 3 "" H 12000 6100 50  0001 C CNN
+	1    12000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5EF2CB17
+P 5200 3100
+F 0 "C4" V 5025 3100 50  0000 C CNN
+F 1 "22p" V 5100 3100 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 5200 3100 50  0001 C CNN
+F 3 "" H 5200 3100 50  0001 C CNN
+	1    5200 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3100 5400 3100
+Wire Wire Line
+	5400 3100 5400 3400
+Wire Wire Line
+	5000 3400 5000 3100
+Wire Wire Line
+	5000 3100 5100 3100
+Connection ~ 5000 3400
+Wire Wire Line
+	5400 3000 5400 3100
+Connection ~ 5400 3100
+Wire Wire Line
+	5900 3400 5800 3400
+Connection ~ 5800 3400
+$Comp
+L Device:R_Small R22
+U 1 1 5EF64B42
+P 3400 6400
+F 0 "R22" V 3250 6325 50  0000 L CNN
+F 1 "220R" V 3325 6325 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 3400 6400 50  0001 C CNN
+F 3 "" H 3400 6400 50  0001 C CNN
+	1    3400 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_Small D6
+U 1 1 5EF6B647
+P 6400 5700
+F 0 "D6" V 6300 5775 50  0000 L CNN
+F 1 "5.1V_Zener" V 6375 5775 50  0000 L CNN
+F 2 "myFoot:my_D_SOD-123" V 6400 5700 50  0001 C CNN
+F 3 "MMSZ5231BT1G" V 6400 5700 50  0001 C CNN
+	1    6400 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 6200 6400 6100
+Wire Wire Line
+	6400 5900 6400 5800
+$Comp
+L power:+9V #PWR018
+U 1 1 5F10F387
+P 6400 5600
+F 0 "#PWR018" H 6400 5450 50  0001 C CNN
+F 1 "+9V" H 6415 5773 50  0000 C CNN
+F 2 "" H 6400 5600 50  0001 C CNN
+F 3 "" H 6400 5600 50  0001 C CNN
+	1    6400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 5F06AC80
+P 4600 5400
+F 0 "R25" V 4525 5225 50  0000 L CNN
+F 1 "1M" V 4525 5400 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 4600 5400 50  0001 C CNN
+F 3 "" H 4600 5400 50  0001 C CNN
+	1    4600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5EF637EA
+P 4000 6400
+F 0 "C17" V 3875 6325 50  0000 C CNN
+F 1 "470p" V 3875 6525 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 4000 6400 50  0001 C CNN
+F 3 "" H 4000 6400 50  0001 C CNN
+	1    4000 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5EF627F2
+P 4300 4800
+F 0 "D1" V 4300 4675 50  0000 C CNN
+F 1 "1N4148W" V 4200 4550 50  0000 C CNN
+F 2 "myFoot:my_D_SOD-123" V 4300 4800 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 4300 4800 50  0001 C CNN
+	1    4300 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 5F22DE0D
+P 4300 6600
+F 0 "R24" H 4359 6646 50  0000 L CNN
+F 1 "100k" H 4359 6555 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 4300 6600 50  0001 C CNN
+F 3 "" H 4300 6600 50  0001 C CNN
+	1    4300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR010
+U 1 1 5F22DFB1
+P 3100 5900
+F 0 "#PWR010" H 3100 5750 50  0001 C CNN
+F 1 "+9V" H 3115 6073 50  0000 C CNN
+F 2 "" H 3100 5900 50  0001 C CNN
+F 3 "" H 3100 5900 50  0001 C CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5ECA58DD
+P 3100 6100
+F 0 "SW1" V 3054 6248 50  0000 L CNN
+F 1 "SW_Push" V 3145 6248 50  0000 L CNN
+F 2 "myFoot:my_SKHCBFA010" H 3100 6300 50  0001 C CNN
+F 3 "SKHCBFA010" H 3100 6300 50  0001 C CNN
+	1    3100 6100
+	0    -1   1    0   
+$EndComp
+$Comp
+L 4xxx:4027 U2
+U 1 1 5EC68AE2
+P 5000 5800
+F 0 "U2" V 5150 6150 50  0000 L CNN
+F 1 "HEF4027BT" V 5075 6150 50  0000 L CNN
+F 2 "myFoot:my_SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5000 5800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4027B.pdf" H 5000 5800 50  0001 C CNN
+	1    5000 5800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4300 5000 11400 5000
+Wire Wire Line
+	4300 5400 4300 5500
+Wire Wire Line
+	4900 5400 4900 5500
+Wire Wire Line
+	4700 5400 4900 5400
+Wire Wire Line
+	4700 5800 4600 5800
+Wire Wire Line
+	4600 5800 4600 5900
+Wire Wire Line
+	5300 5800 5400 5800
+Wire Wire Line
+	5400 5800 5400 5900
+$Comp
+L power:GND #PWR015
+U 1 1 5ECF080F
+P 4600 5900
+F 0 "#PWR015" H 4600 5650 50  0001 C CNN
+F 1 "GND" H 4605 5727 50  0000 C CNN
+F 2 "" H 4600 5900 50  0001 C CNN
+F 3 "" H 4600 5900 50  0001 C CNN
+	1    4600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5ECF09D4
+P 5400 5900
+F 0 "#PWR016" H 5400 5650 50  0001 C CNN
+F 1 "GND" H 5405 5727 50  0000 C CNN
+F 2 "" H 5400 5900 50  0001 C CNN
+F 3 "" H 5400 5900 50  0001 C CNN
+	1    5400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR017
+U 1 1 5ED078FE
+P 5600 6100
+F 0 "#PWR017" H 5600 5950 50  0001 C CNN
+F 1 "+9V" H 5615 6273 50  0000 C CNN
+F 2 "" H 5600 6100 50  0001 C CNN
+F 3 "" H 5600 6100 50  0001 C CNN
+	1    5600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4900 4300 5000
+$Comp
+L Device:D_Small D5
+U 1 1 5ED14955
+P 11400 4800
+F 0 "D5" V 11400 4925 50  0000 C CNN
+F 1 "1N4148W" V 11325 5050 50  0000 C CNN
+F 2 "myFoot:my_D_SOD-123" V 11400 4800 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 11400 4800 50  0001 C CNN
+	1    11400 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11400 4900 11400 5000
+Wire Wire Line
+	4300 5400 4300 5000
+Connection ~ 4300 5400
+Wire Wire Line
+	5100 5500 5100 5400
+$Comp
+L Device:R_Small R26
+U 1 1 5EDB0764
+P 6600 6200
+F 0 "R26" V 6450 6125 50  0000 L CNN
+F 1 "2.2k" V 6525 6125 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 6600 6200 50  0001 C CNN
+F 3 "" H 6600 6200 50  0001 C CNN
+	1    6600 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 6200 6500 6200
+$Comp
+L Device:R_Small R27
+U 1 1 5F069E03
+P 7000 5800
+F 0 "R27" V 7075 5625 50  0000 L CNN
+F 1 "1M" V 7075 5825 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 7000 5800 50  0001 C CNN
+F 3 "" H 7000 5800 50  0001 C CNN
+	1    7000 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NJFET_SDG Q4
+U 1 1 5EEF0365
+P 7200 5300
+F 0 "Q4" V 7225 5550 50  0000 C CNN
+F 1 "2SK208-GR" V 7225 5875 50  0000 C CNN
+F 2 "myFoot:my_SOT-23" H 7400 5400 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/toshiba/2SK208_datasheet_ja_20140301.pdf" H 7200 5300 50  0001 C CNN
+	1    7200 5300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 5EF6221D
+P 7200 5600
+F 0 "D8" V 7225 5475 50  0000 C CNN
+F 1 "1N4148W" V 7150 5350 50  0000 C CNN
+F 2 "myFoot:my_D_SOD-123" V 7200 5600 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/diodeinc/1n4148w.pdf" V 7200 5600 50  0001 C CNN
+	1    7200 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 5700 7200 5800
+Wire Wire Line
+	6700 6200 6800 6200
+Connection ~ 6800 6200
+Wire Wire Line
+	6800 6200 6800 6400
+Wire Wire Line
+	7100 5800 7200 5800
+Connection ~ 7200 5800
+Wire Wire Line
+	7200 5800 7200 5900
+Wire Wire Line
+	5000 6100 5000 6400
+Wire Wire Line
+	4300 6400 4300 6500
+$Comp
+L Device:C_Small C16
+U 1 1 5EEC698B
+P 3700 6200
+F 0 "C16" H 3600 6125 50  0000 C CNN
+F 1 "10n" H 3625 6275 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 3700 6200 50  0001 C CNN
+F 3 "" H 3700 6200 50  0001 C CNN
+	1    3700 6200
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR011
+U 1 1 5EEC6D24
+P 3700 6100
+F 0 "#PWR011" H 3700 5950 50  0001 C CNN
+F 1 "+9V" H 3600 6200 50  0000 C CNN
+F 2 "" H 3700 6100 50  0001 C CNN
+F 3 "" H 3700 6100 50  0001 C CNN
+	1    3700 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6400 3700 6300
+$Comp
+L Device:R_Small R23
+U 1 1 5EED6ED7
+P 3700 6600
+F 0 "R23" H 3759 6646 50  0000 L CNN
+F 1 "1M" H 3759 6555 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 3700 6600 50  0001 C CNN
+F 3 "" H 3700 6600 50  0001 C CNN
+	1    3700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6400 3700 6500
+Connection ~ 3700 6400
+$Comp
+L power:GND #PWR012
+U 1 1 5EF009BD
+P 3700 6700
+F 0 "#PWR012" H 3700 6450 50  0001 C CNN
+F 1 "GND" H 3705 6527 50  0000 C CNN
+F 2 "" H 3700 6700 50  0001 C CNN
+F 3 "" H 3700 6700 50  0001 C CNN
+	1    3700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5EF00D05
+P 4300 6700
+F 0 "#PWR014" H 4300 6450 50  0001 C CNN
+F 1 "GND" H 4305 6527 50  0000 C CNN
+F 2 "" H 4300 6700 50  0001 C CNN
+F 3 "" H 4300 6700 50  0001 C CNN
+	1    4300 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6400 3500 6400
+Wire Wire Line
+	3100 6400 3100 6300
+Wire Wire Line
+	4900 6100 4900 6200
+Wire Wire Line
+	4900 6200 5100 6200
+Wire Wire Line
+	5600 6200 5600 6100
+Wire Wire Line
+	5100 6100 5100 6200
+Connection ~ 5100 6200
+Wire Wire Line
+	5100 6200 5600 6200
+Wire Wire Line
+	5100 5400 6000 5400
+Wire Wire Line
+	4300 5400 4500 5400
+Wire Wire Line
+	4000 5200 7000 5200
+Wire Wire Line
+	4100 6400 4300 6400
+Wire Wire Line
+	3700 6400 3900 6400
+Wire Wire Line
+	4300 6400 5000 6400
+Connection ~ 4300 6400
+Wire Wire Line
+	6000 6400 6800 6400
+Wire Wire Line
+	6000 5400 6000 6400
+Wire Wire Line
+	6900 5800 6800 5800
+Wire Wire Line
+	6800 5800 6800 6200
+$Comp
+L 4xxx:4027 U2
+U 2 1 5F0913DA
+P 9000 5800
+F 0 "U2" V 9000 6300 50  0000 L CNN
+F 1 "HEF4027BT" V 8925 6300 50  0000 L CNN
+F 2 "myFoot:my_SOIC-16_3.9x9.9mm_Pitch1.27mm" H 9000 5800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4027B.pdf" H 9000 5800 50  0001 C CNN
+	2    9000 5800
+	0    1    -1   0   
+$EndComp
+$Comp
+L 4xxx:4027 U2
+U 3 1 5F09191F
+P 8000 6000
+F 0 "U2" H 7770 6046 50  0000 R CNN
+F 1 "HEF4027BT" H 7770 5955 50  0000 R CNN
+F 2 "myFoot:my_SOIC-16_3.9x9.9mm_Pitch1.27mm" H 8000 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4027B.pdf" H 8000 6000 50  0001 C CNN
+	3    8000 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6400 3300 6400
+$Comp
+L power:GND #PWR021
+U 1 1 5F0C0F24
+P 8000 6400
+F 0 "#PWR021" H 8000 6150 50  0001 C CNN
+F 1 "GND" H 8005 6227 50  0000 C CNN
+F 2 "" H 8000 6400 50  0001 C CNN
+F 3 "" H 8000 6400 50  0001 C CNN
+	1    8000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR020
+U 1 1 5F0C1165
+P 8000 5600
+F 0 "#PWR020" H 8000 5450 50  0001 C CNN
+F 1 "+9V" H 8015 5773 50  0000 C CNN
+F 2 "" H 8000 5600 50  0001 C CNN
+F 3 "" H 8000 5600 50  0001 C CNN
+	1    8000 5600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8900 5500
+NoConn ~ 9100 5500
+Wire Wire Line
+	8600 5700 8600 5800
+Wire Wire Line
+	8600 5800 8700 5800
+Wire Wire Line
+	8900 6100 8900 6200
+Wire Wire Line
+	8900 6200 9000 6200
+Wire Wire Line
+	9000 6200 9000 6100
+Wire Wire Line
+	9000 6200 9100 6200
+Wire Wire Line
+	9100 6200 9100 6100
+Connection ~ 9000 6200
+Wire Wire Line
+	9400 6200 9400 5800
+Wire Wire Line
+	9400 5800 9300 5800
+Wire Wire Line
+	9100 6200 9400 6200
+Connection ~ 9100 6200
+Wire Wire Line
+	9400 5700 9400 5800
+Connection ~ 9400 5800
+$Comp
+L power:+9V #PWR023
+U 1 1 5F128944
+P 8600 5700
+F 0 "#PWR023" H 8600 5550 50  0001 C CNN
+F 1 "+9V" H 8615 5873 50  0000 C CNN
+F 2 "" H 8600 5700 50  0001 C CNN
+F 3 "" H 8600 5700 50  0001 C CNN
+	1    8600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR027
+U 1 1 5F128C33
+P 9400 5700
+F 0 "#PWR027" H 9400 5550 50  0001 C CNN
+F 1 "+9V" H 9415 5873 50  0000 C CNN
+F 2 "" H 9400 5700 50  0001 C CNN
+F 3 "" H 9400 5700 50  0001 C CNN
+	1    9400 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 5200 5550 0    50   ~ 0
+BYPASS
+Text Notes 4400 5550 0    50   ~ 0
+EFFECT ON
+$Comp
+L Device:C_Small C21
+U 1 1 5F14028D
+P 12300 6000
+F 0 "C21" H 12225 5925 50  0000 C CNN
+F 1 "0.1u" H 12200 6075 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 12300 6000 50  0001 C CNN
+F 3 "" H 12300 6000 50  0001 C CNN
+	1    12300 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5F14050B
+P 12600 6000
+F 0 "C22" H 12525 5925 50  0000 C CNN
+F 1 "0.1u" H 12500 6075 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 12600 6000 50  0001 C CNN
+F 3 "" H 12600 6000 50  0001 C CNN
+	1    12600 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5F155B2B
+P 12300 6100
+F 0 "#PWR028" H 12300 5850 50  0001 C CNN
+F 1 "GND" H 12305 5927 50  0000 C CNN
+F 2 "" H 12300 6100 50  0001 C CNN
+F 3 "" H 12300 6100 50  0001 C CNN
+	1    12300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5F155C71
+P 12600 6100
+F 0 "#PWR029" H 12600 5850 50  0001 C CNN
+F 1 "GND" H 12605 5927 50  0000 C CNN
+F 2 "" H 12600 6100 50  0001 C CNN
+F 3 "" H 12600 6100 50  0001 C CNN
+	1    12600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 5900 12300 5800
+Wire Wire Line
+	12600 5900 12600 5800
+$Comp
+L Device:R_Small R28
+U 1 1 5F176609
+P 12800 5800
+F 0 "R28" V 12650 5725 50  0000 L CNN
+F 1 "10k" V 12725 5725 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 12800 5800 50  0001 C CNN
+F 3 "" H 12800 5800 50  0001 C CNN
+	1    12800 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 5800 12600 5800
+Wire Wire Line
+	12900 5800 13000 5800
+Wire Wire Line
+	13000 5800 13000 5900
+Connection ~ 3800 4000
+Wire Wire Line
+	11700 5800 12000 5800
+Connection ~ 12000 5800
+Wire Wire Line
+	12000 5800 12300 5800
+Connection ~ 12300 5800
+Wire Wire Line
+	12300 5800 12600 5800
+Connection ~ 12600 5800
+Wire Wire Line
+	13300 5700 13300 5800
+Wire Wire Line
+	13000 5800 13300 5800
+Connection ~ 13000 5800
+Connection ~ 13300 5800
+Wire Wire Line
+	13300 5800 13300 5900
+$Comp
+L Connector:Barrel_Jack_Switch J3
+U 1 1 5F23AB58
+P 11000 5900
+F 0 "J3" H 10900 5600 50  0000 R CNN
+F 1 "DC_Jack" H 11125 5700 50  0000 R CNN
+F 2 "myFoot:my_DC_Jack" H 11050 5860 50  0001 C CNN
+F 3 "~" H 11050 5860 50  0001 C CNN
+	1    11000 5900
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack3_Switch J1
+U 1 1 5F23BE2D
+P 1600 3900
+F 0 "J1" H 1450 4275 50  0000 C CNN
+F 1 "INPUT" H 1500 4200 50  0000 C CNN
+F 2 "myFoot:my_Phone_Jack1" H 1600 3900 50  0001 C CNN
+F 3 "~" H 1600 3900 50  0001 C CNN
+	1    1600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 5800 11400 5800
+Wire Wire Line
+	11300 5900 11400 5900
+Wire Wire Line
+	11400 5900 11400 5800
+Connection ~ 11400 5800
+Wire Wire Line
+	11400 5800 11300 5800
+Wire Wire Line
+	11300 6000 11400 6000
+Wire Wire Line
+	11400 6000 11400 6100
+$Comp
+L power:GND #PWR022
+U 1 1 5F29E8F9
+P 11400 6100
+F 0 "#PWR022" H 11400 5850 50  0001 C CNN
+F 1 "GND" H 11405 5927 50  0000 C CNN
+F 2 "" H 11400 6100 50  0001 C CNN
+F 3 "" H 11400 6100 50  0001 C CNN
+	1    11400 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 3900
+Wire Wire Line
+	2000 4100 1800 4100
+Wire Wire Line
+	1800 4200 1900 4200
+Wire Wire Line
+	1900 4200 1900 4300
+$Comp
+L power:GND #PWR01
+U 1 1 5F2EB52B
+P 1900 4300
+F 0 "#PWR01" H 1900 4050 50  0001 C CNN
+F 1 "GND" H 1905 4127 50  0000 C CNN
+F 2 "" H 1900 4300 50  0001 C CNN
+F 3 "" H 1900 4300 50  0001 C CNN
+	1    1900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3700 1900 3700
+Wire Wire Line
+	1900 3700 1900 3800
+Connection ~ 1900 4200
+Wire Wire Line
+	1800 3800 1900 3800
+Connection ~ 1900 3800
+Wire Wire Line
+	1900 3800 1900 4000
+Wire Wire Line
+	1800 4000 1900 4000
+Connection ~ 1900 4000
+Wire Wire Line
+	1900 4000 1900 4200
+Connection ~ 4300 5000
+$Comp
+L Amplifier_Operational:TL074 U1
+U 2 1 5F40FBCD
+P 6600 3300
+F 0 "U1" H 6650 3475 50  0000 C CNN
+F 1 "OPA1679" H 6725 3550 50  0000 C CNN
+F 2 "myFoot:my_TSSOP-14" H 6550 3400 50  0001 C CNN
+F 3 "" H 6650 3500 50  0001 C CNN
+	2    6600 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 3 1 5F41028B
+P 8000 3600
+F 0 "U1" H 8125 3750 50  0000 C CNN
+F 1 "OPA1679" H 8225 3825 50  0000 C CNN
+F 2 "myFoot:my_TSSOP-14" H 7950 3700 50  0001 C CNN
+F 3 "" H 8050 3800 50  0001 C CNN
+	3    8000 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 5F411333
+P 3000 4000
+F 0 "U1" H 2958 4046 50  0001 L CNN
+F 1 "OPA1679" H 2958 3955 50  0001 L CNN
+F 2 "myFoot:my_TSSOP-14" H 2950 4100 50  0001 C CNN
+F 3 "" H 3050 4200 50  0001 C CNN
+	5    3000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3000 7000 3000
+$Comp
+L Device:Q_NJFET_SDG Q3
+U 1 1 5EC4E010
+P 11400 4200
+F 0 "Q3" V 11728 4200 50  0000 C CNN
+F 1 "2SK208-GR" V 11637 4200 50  0000 C CNN
+F 2 "myFoot:my_SOT-23" H 11600 4300 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/toshiba/2SK208_datasheet_ja_20140301.pdf" H 11400 4200 50  0001 C CNN
+	1    11400 4200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	11200 4100 11100 4100
+Wire Wire Line
+	11700 4100 11900 4100
+Wire Wire Line
+	11700 5200 11700 4100
+Connection ~ 11700 4100
+Wire Wire Line
+	11700 4100 11600 4100
+Wire Wire Line
+	12300 3700 13100 3700
+$Comp
+L Amplifier_Operational:TL074 U1
+U 4 1 5F4108A4
+P 3000 4000
+F 0 "U1" H 3075 4175 50  0000 C CNN
+F 1 "OPA1679" H 3175 4250 50  0000 C CNN
+F 2 "myFoot:my_TSSOP-14" H 2950 4100 50  0001 C CNN
+F 3 "" H 3050 4200 50  0001 C CNN
+	4    3000 4000
+	1    0    0    1   
+$EndComp
+NoConn ~ 14100 3900
+NoConn ~ 14100 3800
+NoConn ~ 14100 3700
+Wire Wire Line
+	14000 3600 14000 4300
+NoConn ~ 14100 4100
+$Comp
+L power:GND #PWR09
+U 1 1 5F33BF3D
+P 14000 4300
+F 0 "#PWR09" H 14000 4050 50  0001 C CNN
+F 1 "GND" H 14005 4127 50  0000 C CNN
+F 2 "" H 14000 4300 50  0001 C CNN
+F 3 "" H 14000 4300 50  0001 C CNN
+	1    14000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 3600 14000 3600
+Connection ~ 13800 4000
+Wire Wire Line
+	13800 4000 14100 4000
+$Comp
+L Connector:AudioJack3_Switch J2
+U 1 1 5F23D38A
+P 14300 3800
+F 0 "J2" H 14400 4175 50  0000 R CNN
+F 1 "OUTPUT" H 14400 4100 50  0000 R CNN
+F 2 "myFoot:my_Phone_Jack1" H 14300 3800 50  0001 C CNN
+F 3 "~" H 14300 3800 50  0001 C CNN
+	1    14300 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 4000 13200 4000
+Connection ~ 13100 4000
+Wire Wire Line
+	13100 3700 13100 4000
+Wire Wire Line
+	13000 4000 13100 4000
+$Comp
+L power:GND #PWR08
+U 1 1 5ECEC076
+P 13800 4300
+F 0 "#PWR08" H 13800 4050 50  0001 C CNN
+F 1 "GND" H 13805 4127 50  0000 C CNN
+F 2 "" H 13800 4300 50  0001 C CNN
+F 3 "" H 13800 4300 50  0001 C CNN
+	1    13800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 4000 13400 4000
+$Comp
+L Device:R_Small R20
+U 1 1 5EC59211
+P 13300 4000
+F 0 "R20" V 13150 3925 50  0000 L CNN
+F 1 "1k" V 13225 3925 50  0000 L CNN
+F 2 "myFoot:my_R_2012(0805)_HandSoldering" H 13300 4000 50  0001 C CNN
+F 3 "" H 13300 4000 50  0001 C CNN
+	1    13300 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 3900 12300 3900
+Wire Wire Line
+	13700 4000 13800 4000
+Wire Wire Line
+	13800 4000 13800 4100
+$Comp
+L Device:R_Small R21
+U 1 1 5EC4E920
+P 13800 4200
+F 0 "R21" H 13859 4246 50  0000 L CNN
+F 1 "100k" H 13859 4155 50  0000 L CNN
+F 2 "myFoot:my_R_1608(0603)_HandSoldering" H 13800 4200 50  0001 C CNN
+F 3 "" H 13800 4200 50  0001 C CNN
+	1    13800 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C15
+U 1 1 5CDF6976
+P 13600 4000
+F 0 "C15" V 13775 4000 50  0000 C CNN
+F 1 "10u" V 13700 4000 50  0000 C CNN
+F 2 "myFoot:my_C_Elec_5" H 13600 4000 50  0001 C CNN
+F 3 "" H 13600 4000 50  0001 C CNN
+	1    13600 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12300 4100 12400 4100
+Connection ~ 12300 4100
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 5F40EF95
+P 12700 4000
+F 0 "U1" H 12800 4175 50  0000 C CNN
+F 1 "OPA1679" H 12900 4250 50  0000 C CNN
+F 2 "myFoot:my_TSSOP-14" H 12650 4100 50  0001 C CNN
+F 3 "" H 12750 4200 50  0001 C CNN
+	1    12700 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7400 5200 11700 5200
+$Comp
+L Device:C_Small C18
+U 1 1 5EC816BA
+P 4300 5600
+F 0 "C18" H 4175 5525 50  0000 C CNN
+F 1 "0.1u" H 4200 5675 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 4300 5600 50  0001 C CNN
+F 3 "" H 4300 5600 50  0001 C CNN
+	1    4300 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5EC82415
+P 4300 5800
+F 0 "C19" H 4400 5725 50  0000 C CNN
+F 1 "0.1u" H 4400 5875 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 4300 5800 50  0001 C CNN
+F 3 "" H 4300 5800 50  0001 C CNN
+	1    4300 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EC82637
+P 4300 5900
+F 0 "#PWR0101" H 4300 5650 50  0001 C CNN
+F 1 "GND" H 4305 5727 50  0000 C CNN
+F 2 "" H 4300 5900 50  0001 C CNN
+F 3 "" H 4300 5900 50  0001 C CNN
+	1    4300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5EC8F35A
+P 7200 6000
+F 0 "C24" H 7100 5925 50  0000 C CNN
+F 1 "0.1u" H 7100 6075 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 7200 6000 50  0001 C CNN
+F 3 "" H 7200 6000 50  0001 C CNN
+	1    7200 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5EC8F364
+P 7200 6200
+F 0 "C25" H 7300 6125 50  0000 C CNN
+F 1 "0.1u" H 7300 6275 50  0000 C CNN
+F 2 "myFoot:my_C_1608(0603)_HandSoldering" H 7200 6200 50  0001 C CNN
+F 3 "" H 7200 6200 50  0001 C CNN
+	1    7200 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EC8F36E
+P 7200 6300
+F 0 "#PWR0102" H 7200 6050 50  0001 C CNN
+F 1 "GND" H 7205 6127 50  0000 C CNN
+F 2 "" H 7200 6300 50  0001 C CNN
+F 3 "" H 7200 6300 50  0001 C CNN
+	1    7200 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5ECBAC9C
+P 13300 6000
+F 0 "C23" H 13225 5925 50  0000 C CNN
+F 1 "47u" H 13200 6075 50  0000 C CNN
+F 2 "myFoot:my_C_3225(1210)_HandSoldering" H 13300 6000 50  0001 C CNN
+F 3 "" H 13300 6000 50  0001 C CNN
+	1    13300 6000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3800 4000 4000 4000
+Wire Wire Line
+	5000 3400 5000 3700
+Wire Wire Line
+	5100 3700 5000 3700
+Connection ~ 5000 3700
+Wire Wire Line
+	5000 3700 5000 4000
+Wire Wire Line
+	4900 4000 5000 4000
+Wire Wire Line
+	4300 4700 4300 4300
+Wire Wire Line
+	4000 5200 4000 4000
+Connection ~ 4000 4000
+Wire Wire Line
+	4000 4000 4100 4000
+Text Notes 10350 3650 0    50   ~ 0
+TONE
+Text Notes 10750 4250 0    50   ~ 0
+LEVEL
+$Comp
+L Device:R_POT RV1
+U 1 1 5CDFB6D8
+P 7600 2800
+F 0 "RV1" V 7500 2775 50  0000 R CNN
+F 1 "100kB" V 7500 3050 50  0000 R CNN
+F 2 "myFoot:my_Pot_PTV09A-4" H 7600 2800 50  0001 C CNN
+F 3 "" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	0    1    1    0   
+$EndComp
+Text Notes 7500 2675 0    50   ~ 0
+DIST
+$Comp
+L Device:R_POT RV3
+U 1 1 5EC4C366
+P 10700 4100
+F 0 "RV3" H 10900 4300 50  0000 R CNN
+F 1 "100kB" H 11000 4375 50  0000 R CNN
+F 2 "myFoot:my_Pot_PTV09A-4" H 10700 4100 50  0001 C CNN
+F 3 "" H 10700 4100 50  0001 C CNN
+	1    10700 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5ECE47A9
+P 6200 3700
+F 0 "#PWR0103" H 6200 3450 50  0001 C CNN
+F 1 "GND" H 6205 3527 50  0000 C CNN
+F 2 "" H 6200 3700 50  0001 C CNN
+F 3 "" H 6200 3700 50  0001 C CNN
+	1    6200 3700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
