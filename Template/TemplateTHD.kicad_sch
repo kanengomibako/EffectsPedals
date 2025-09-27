@@ -5957,7 +5957,7 @@
 	)
 	(text "D: Diameter（直径）\nP: Pitch（ピン間隔）"
 		(exclude_from_sim no)
-		(at 195.58 43.18 0)
+		(at 127 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5968,7 +5968,7 @@
 	)
 	(text "github.com/kanengomibako"
 		(exclude_from_sim no)
-		(at 195.58 35.56 0)
+		(at 127 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5979,7 +5979,7 @@
 	)
 	(text "Templete THD"
 		(exclude_from_sim no)
-		(at 195.58 30.48 0)
+		(at 127 96.52 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -5992,7 +5992,7 @@
 	)
 	(polyline
 		(pts
-			(xy 246.38 22.86) (xy 246.38 45.72)
+			(xy 177.8 88.9) (xy 177.8 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6002,7 +6002,7 @@
 	)
 	(polyline
 		(pts
-			(xy 246.38 22.86) (xy 193.04 22.86)
+			(xy 177.8 88.9) (xy 124.46 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6012,7 +6012,7 @@
 	)
 	(polyline
 		(pts
-			(xy 193.04 22.86) (xy 193.04 45.72)
+			(xy 124.46 88.9) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6022,7 +6022,7 @@
 	)
 	(polyline
 		(pts
-			(xy 246.38 45.72) (xy 193.04 45.72)
+			(xy 177.8 111.76) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
