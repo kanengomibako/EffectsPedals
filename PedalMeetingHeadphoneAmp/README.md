@@ -53,7 +53,11 @@
 
 
 ### ■ 資料
-- [Pedal Meeting Headphone Amp製作に関する記事](https://kanengomibako.github.io/)（準備中）
+- [Pedal Meeting Headphone Amp製作に関する記事](https://kanengomibako.github.io/pages/00384_PedalMeetingHeadphoneAmp.html)
+
+- ブロック図
+
+  ![](PedalMeetingHeadphoneAmp_block.png)<br>
 
 
 
