@@ -1,7 +1,7 @@
 ﻿# Buffer Variator
 ![Buffer Variator Picture](BufferVariator_RevB_pic.jpg)<br>
 
-入力インピーダンスの変更や音量の増減が可能なバッファー／ブースターです。パッシブタイプのギターやベースは、最初に接続するバッファーが音色決定に重要な役割を果たします。バッファーの入力部にある抵抗とコンデンサの値を変更することにより、柔軟な音作りが可能となります。
+ギター・ベースのピックアップで拾った音は、楽器本体のボリューム・トーンやシールドケーブル、最初に接続する機器の入力部によって音質が変化します。本機は、入力部の抵抗値と静電容量値を変化させることにより、主に高音域の音質変化をコントロールできるようにしたバッファー／ブースターです。
 
 
 
@@ -70,8 +70,9 @@
 
 
 ### 資料
-- [Buffer Variator製作に関する記事](https://kanengomibako.github.io/)（準備中）
+- [Buffer Variator製作に関する記事](https://kanengomibako.github.io/00386_BufferVariator.html)
 - [「ボリューム」で考える入出力インピーダンス](https://kanengomibako.github.io/pages/00301.html)
+- [ギターケーブルの音への影響](https://zenn.dev/bj_9/articles/ef8c6669f2db6e)（外部サイト）
 
 
 
